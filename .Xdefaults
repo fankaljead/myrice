@@ -32,9 +32,18 @@
 URxvt.intensityStyles:	false
 URxvt.background:       [70]#000000
 URxvt.depth:		32
-URxvt.font: 		xft:monospace:size=12
+!!URxvt.font: 		xft:DejaVu Sans:size=12:style=Regular:antialias=true
 URxvt.scrollBar:	false
 URxvt.cursorColor:	white
+!!Xft.dpi:96
+
+
+!!Xft.dpi:96
+URxvt.font:xft:DejaVu Sans Mono:size=13:style=Regular:antialias=true
+URxvt.boldfont:xft:DejaVu Sans Mono:size=13:style=BOld:antialias=true
+
+
+
 
 !! Extensions
 URxvt.perl-ext-common:	default,matcher,resize-font,url-select,keyboard-select

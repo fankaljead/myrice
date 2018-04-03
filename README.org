@@ -1,7 +1,7 @@
 * 我的 Manjaro Arch Linux 个性化配置
 ** 1. 使用到的软件
    | 软件名称     | 作用 |
-   | [https://wiki.archlinux.org/index.php/Rxvt-unicode[https://wiki.archlinux.org/index.php/Rxvt-unicode][urxvt]]  |一个terminal终端 |
+   | [https://wiki.archlinux.org/index.[https://wiki.archlinux.org/index.php/Rxvt-unicodephp/Rxvt-unicode] [urxvt]] |一个terminal终端 |
    | rofi         |快捷打开应用 |
    | oh-my-zsh    |个性化的终端 |
    | i3lock-fancy |一个美观的锁屏软件 |

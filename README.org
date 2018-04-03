@@ -1,7 +1,7 @@
 * 我的 manjaro arch linux 个性化配置
 ** screenshot
    [[./screenshot.png]]
-** + 使用到的软件
+** - 使用到的软件
    | 软件名称     | 作用 |
    | [[https://wiki.archlinux.org/index.php/rxvt-unicode][urxvt]]  |一个terminal终端 |
    | [[https://github.com/DaveDavenport/rofi][rofi]]         |快捷打开应用 |

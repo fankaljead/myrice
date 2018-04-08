@@ -22,7 +22,7 @@ echo "{
 	\"timeout\": 300,
 	\"method\": \"aes-256-cfb\",
 	\"fast_open\": false
-}"> shadowsocks.json
+}"> /etc/shadowsocks.json
 
 echo "starting sservice"
 

@@ -7,14 +7,15 @@
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="bira"
+# ZSH_THEME="bira"
+ZSH_THEME="agnoster"
 
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
 # cause zsh load theme from this variable instead of
 # looking in ~/.oh-my-zsh/themes/
 # An empty array have no effect
-# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
+ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" "mh" "dst" "candy" "cloud" "smt" "kiwi" "mira" "wezm")
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -112,8 +113,38 @@ alias cd2='cd ../..'
 alias ssn='sudo shutdown now'
 alias spi='sudo pacman -S'
 alias spr='sudo pacman -R'
+alias v3g='nvim ~/.i3/config'
+alias vim='/usr/bin/nvim'
 
 #export 
 export GOBIN=~/go/bin/
 export GOPATH=~/go/
 export PATH=$PATH:~/go/bin/
+
+
+#export http_proxy=http://127.0.0.1:1080
+#export https_proxy=$http_proxy
+#export ftp_proxy=$http_proxy
+#export rsync_proxy=$http_proxy
+#export no_proxy="localhost,127.0.0.1,localaddress,.localdomain.com"
+
+#function powerline_precmd() {
+#    PS1="$(powerline-shell --shell zsh $?)"
+#}
+#
+#function install_powerline_precmd() {
+#  for s in "${precmd_functions[@]}"; do
+#    if [ "$s" = "powerline_precmd" ]; then
+#      return
+#    fi
+#  done
+#  precmd_functions+=(powerline_precmd)
+##}
+#
+#if [ "$TERM" != "linux" ]; then
+#    install_powerline_precmd
+#fi
+export LANG=zh_CN.UTF-8
+export GTK_IM_MODULE=fcitx
+export QT_IM_MODULE=fcitx
+export XMODIFIERS=“@im=fcitx”

@@ -1,0 +1,9 @@
+{
+    "method": "aes-256-cfb",
+    "password": "212kawhi",
+    "server": "178.62.120.211",
+    "server_port": 1984,
+    "localPort": 1080,
+	"local_address":"127.0.0.1",
+	"timeout":300
+}

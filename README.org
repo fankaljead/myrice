@@ -2,13 +2,13 @@
 ** screenshot
    [[./screenshot.png]]
 ** - 使用到的软件
-   | 软件名称     | 作用 |
-   | [[https://wiki.archlinux.org/index.php/rxvt-unicode][urxvt]]  |一个terminal终端 |
-   | [[https://github.com/DaveDavenport/rofi][rofi]]         |快捷打开应用 |
-   | [[https://github.com/robbyrussell/oh-my-zsh][oh-my-zsh]]|个性化的终端 |
-   | i3lock-fancy |一个美观的锁屏软件 |
-   | i3-gaps      |Windows Manager |
-   | spacemacs    |vim模式的emacs |
-   | gvim         |vim |
-   | nitrogen     |设置壁纸 |
-   | compton      |设置透明的软件 |
+   | 软件名称     | 作用               |
+   | [[https://wiki.archlinux.org/index.php/rxvt-unicode][urxvt]]        | 一个terminal终端   |
+   | [[https://github.com/DaveDavenport/rofi][rofi]]         | 快捷打开应用       |
+   | [[https://github.com/robbyrussell/oh-my-zsh][oh-my-zsh]]    | 个性化的终端       |
+   | i3lock-fancy | 一个美观的锁屏软件 |
+   | i3-gaps      | Windows Manager    |
+   | spacemacs    | vim模式的emacs     |
+   | gvim         | vim                |
+   | nitrogen     | 设置壁纸           |
+   | compton      | 设置透明的软件     |

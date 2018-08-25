@@ -1,4 +1,4 @@
-## If you come from bash you might have to change your $PATH.
+# If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
@@ -8,7 +8,7 @@
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 # ZSH_THEME="bira"
-ZSH_THEME="agnoster"
+ZSH_THEME="robbyrussell"
 
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
@@ -93,18 +93,20 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias enw='emacs -nw'
 alias f='ranger'
 alias m='ncmpcpp'
 alias ll='ls -la'
 alias la='ls -a'
 alias li='ls -i'
 alias play='mpv'
-alias e='emacs'
-alias v='vim'
+alias e='nvim'
+alias v='/usr/bin/vim'
+alias sv='sudo vim'
 alias h='man'
 alias q='exit'
 alias ws='wd -s'
-alias show='screenfetch'
+alias show='neofetch'
 alias his='history'
 alias clock='ncmpcpp -s clock'
 alias sw='feh --bg-fill'
@@ -115,6 +117,14 @@ alias spi='sudo pacman -S'
 alias spr='sudo pacman -R'
 alias v3g='nvim ~/.i3/config'
 alias vim='/usr/bin/nvim'
+alias srn='sudo reboot now'
+alias t='ydcv'
+# words to picture
+alias tf='figlet'
+alias tt='toilet'
+alias psy='sudo pacman -Syy'
+alias psy='sudo pacman -Syy'
+alias snv='sudo nvim'
 
 #export 
 export GOBIN=~/go/bin/
@@ -148,3 +158,24 @@ export LANG=zh_CN.UTF-8
 export GTK_IM_MODULE=fcitx
 export QT_IM_MODULE=fcitx
 export XMODIFIERS=“@im=fcitx”
+
+export JAVA_HOME=~/develop-tools/jdk-10.0.1
+export PATH=$JAVA_HOME/bin:$PATH
+export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
+
+# tomcat configuration
+export CATALINA_HOME=~/develop-tools/apache-tomcat-9.0.10
+export CATALINA_BASE=~/develop-tools/apache-tomcat-9.0.10
+
+# maven config
+export MAVEN_HOME=~/develop-tools/apache-maven-3.5.4
+export PATH=$MAVEN_HOME/bin:$PATH
+export EDITOR=/usr/bin/nvim
+export BROWSER=/usr/bin/firefox
+export TERMINAL=/usr/bin/terminator
+export WORKON_HOME=$HOME/.virtualenvs
+
+
+
+PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
+export GEM_HOME=$HOME/.gem

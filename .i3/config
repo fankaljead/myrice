@@ -21,13 +21,19 @@ bindsym $mod+n border normal
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font xft:URWGothic-Book 8
+# font xft:URWGothic-Book 10
+font xft:Droid Sans Pro 10
 
 # Use Mouse+$mod to drag floating windows
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec st
+set $terminal st
+# set $terminal terminator
+bindsym $mod+Return exec $terminal
+bindsym $mod+Shift+Return exec $terminal -e tmux
+# bindsym $mod+Return exec st
+# bindsym $mod+Shift+Return exec st -e tmux
 #bindsym $mod+Return exec terminal
 
 # kill focused window
@@ -35,8 +41,8 @@ bindsym $mod+q kill
 
 # start program launcher
 #bindsym $mod+d exec --no-startup-id dmenu_recency
-bindsym $mod+d exec --no-startup-id rofi -show run
-bindsym $mod+x exec --no-startup-id rofi -show drun
+bindsym $mod+x exec --no-startup-id rofi -show run
+bindsym $mod+d exec --no-startup-id rofi -show drun
 
 # launch categorized menu
 bindsym $mod+z exec --no-startup-id morc_menu
@@ -46,7 +52,7 @@ bindsym $mod+z exec --no-startup-id morc_menu
 ################################################################################################
 
 exec --no-startup-id volumeicon
-bindsym $mod+Ctrl+m exec terminal -e 'alsamixer'
+bindsym $mod+Ctrl+m exec $terminal -e 'alsamixer'
 #exec --no-startup-id pulseaudio
 #exec --no-startup-id pa-applet
 #bindsym $mod+Ctrl+m exec pavucontrol
@@ -58,34 +64,42 @@ bindsym $mod+Ctrl+m exec terminal -e 'alsamixer'
 # bindsym XF86MonBrightnessDown exec "xbacklight -dec 10; notify-send 'brightness down'"
 
 # Start Applications
-bindsym $mod+Ctrl+b exec terminal -e 'bmenu'
+bindsym $mod+Ctrl+b exec $terminal -e 'bmenu'
+bindsym $mod+Ctrl+v exec $terminal -e 'nvim'
+bindsym $mod+Shift+f exec $terminal -e 'ranger'
 bindsym $mod+F2 exec palemoon
 bindsym $mod+F3 exec pcmanfm
+bindsym Mod1+e exec pcmanfm
 bindsym $mod+Ctrl+f exec firefox
-#bindsym $mod+Ctrl+g exec chromium
+bindsym $mod+Ctrl+g exec google-chrome-stable
 bindsym $mod+Ctrl+n exec netease-cloud-music
 bindsym $mod+Ctrl+e exec emacs
 
 # bindsym $mod+F3 exec ranger
 bindsym $mod+Shift+F3 exec gksu pcmanfm
-bindsym $mod+F5 exec terminal -e 'mocp'
+bindsym $mod+F5 exec $terminal -e 'mocp'
 bindsym $mod+t exec --no-startup-id pkill compton
 bindsym $mod+Ctrl+t exec --no-startup-id compton -bfcelmzrotID
 #bindsym $mod+Ctrl+t exec --no-startup-id compton --xrender-sync-fence
 bindsym $mod+Shift+d --release exec "killall dunst; exec notify-send 'restart dunst'"
-bindsym Print exec --no-startup-id i3-scrot
+bindsym $mod+Ctrl+a exec --no-startup-id i3-scrot
 bindsym $mod+Print --release exec --no-startup-id i3-scrot -w
 bindsym $mod+Shift+Print --release exec --no-startup-id i3-scrot -s
-bindsym $mod+Shift+h exec xdg-open /usr/share/doc/manjaro/i3_help.pdf
+bindsym Mod1+Shift+h exec xdg-open /usr/share/doc/manjaro/i3_help.pdf
 bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
 
 # focus_follows_mouse no
 
 # change focus
-bindsym $mod+j focus left
-bindsym $mod+k focus down
-bindsym $mod+l focus up
-bindsym $mod+semicolon focus right
+# bindsym $mod+j focus left
+# bindsym $mod+k focus down
+# bindsym $mod+l focus up
+# bindsym $mod+semicolon focus right
+bindsym $mod+k focus up
+bindsym $mod+j focus down
+bindsym $mod+l focus right
+bindsym $mod+h focus left
+
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
@@ -94,10 +108,14 @@ bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 
 # move focused window
-bindsym $mod+Shift+j move left
-bindsym $mod+Shift+k move down
-bindsym $mod+Shift+l move up
-bindsym $mod+Shift+semicolon move right
+# bindsym $mod+Shift+j move left
+# bindsym $mod+Shift+k move down
+# bindsym $mod+Shift+l move up
+# bindsym $mod+Shift+semicolon move right
+ bindsym $mod+Shift+k move up
+ bindsym $mod+Shift+j move down
+ bindsym $mod+Shift+l move right
+ bindsym $mod+Shift+h move left
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Shift+Left move left
@@ -111,7 +129,7 @@ bindsym $mod+b workspace back_and_forth
 bindsym $mod+Shift+b move container to workspace back_and_forth; workspace back_and_forth
 
 # split orientation
-bindsym $mod+h split h;exec notify-send 'tile horizontally'
+bindsym Mod1+h split h;exec notify-send 'tile horizontally'
 bindsym $mod+v split v;exec notify-send 'tile vertically'
 bindsym $mod+Shift+q split toggle
 
@@ -150,13 +168,23 @@ bindsym $mod+Ctrl+Left workspace prev
 # to display names or symbols instead of plain workspace numbers you can use
 # something like: set $ws1 1:mail
 #                 set $ws2 2:
-set $ws1 1 Firefox
-set $ws2 2 Terminals
-set $ws3 3 Music
-set $ws4 4 Vim
-set $ws5 5 Emacs
-set $ws6 6 Mail
-set $ws7 7 Tasks
+# set $ws1 1 
+# set $ws2 2 
+# set $ws3 3 
+# set $ws4 4 
+# set $ws5 5 
+# set $ws6 6 
+# set $ws7 7
+# set $ws8 8
+
+
+set $ws1 1 
+set $ws2 2
+set $ws3 3
+set $ws4 4 
+set $ws5 5
+set $ws6 6
+set $ws7 7
 set $ws8 8
 
 # switch to workspace
@@ -212,7 +240,9 @@ for_window [title="i3_help"] floating enable sticky enable border normal
 for_window [class="Lightdm-gtk-greeter-settings"] floating enable
 for_window [class="Lxappearance"] floating enable sticky enable border normal
 for_window [class="Manjaro-hello"] floating enable
+for_window [class="mpv"] floating enable sticky border normal
 for_window [class="Manjaro Settings Manager"] floating enable border normal
+
 for_window [title="MuseScore: Play Panel"] floating enable
 for_window [class="Nitrogen"] floating enable sticky enable border normal
 for_window [class="Oblogout"] fullscreen enable
@@ -295,7 +325,8 @@ bindsym $mod+9 exec --no-startup-id i3lock-fancy
 
 # Autostart applications
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
-exec --no-startup-id nitrogen --restore; sleep 1; compton -b
+exec --no-startup-id nitrogen --restore; sleep 1; compton -bfcelmzrotID
+#bindsym 
 #exec --no-startup-id manjaro-hello
 exec --no-startup-id nm-applet
 exec --no-startup-id xfce4-power-manager
@@ -309,6 +340,7 @@ exec --no-startup-id xautolock -time 10 -locker i3lock-fancy
 #exec --no-startup-id xautolock -time 10 -locker blurlock
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
+exec_always --no-startup-id mpd
 
 # Color palette used for the terminal ( ~/.Xresources file )
 # Colors are gathered based on the documentation:
@@ -357,7 +389,7 @@ set_from_resource $term_color15    color15
 #############################
 
 # Set inner/outer gaps
-gaps inner 20
+gaps inner 8
 gaps outer 0
 
 # Additionally, you can issue commands with the following syntax. This is useful to bind keys to changing the gap size.
@@ -366,7 +398,8 @@ gaps outer 0
 # gaps outer all plus 5
 
 # Smart gaps (gaps used if only more than one container on the workspace)
-smart_gaps on
+# open a window with gaps
+# smart_gaps on
 
 # Smart borders (draw borders around container only if it is not the only container on this workspace) 
 # on|no_gaps (on=always activate and no_gaps=only activate if the gap size to the edge of the screen is 0)
@@ -411,14 +444,14 @@ mode "$mode_gaps_outer" {
 exec_always feh --bg-center ~/mytemp/wallpaper.jpg
 # Press $mod+o followed by either f, t, Escape or Return to launch firefox,
 # thunderbird or return to the default mode, respectively.
-set $mode_launcher Launch: [f]irefox [t]hunderbird [e]macs [n]etease-cloud-music [g]vim [v]s-code [m]onotor
+set $mode_launcher Launch: [f]irefox [t]hunderbird [e]macs [n]etease-cloud-music [g]oogle-chrome [v]s-code [m]onotor
 bindsym $mod+o mode "$mode_launcher"
 
 mode "$mode_launcher" {
     bindsym f exec firefox
     bindsym t exec thunderbird
     bindsym e exec emacs
-    bindsym g exec gvim
+    bindsym g exec google-chrome-stable
     bindsym v exec code
     bindsym m exec deepin-system-monitor
 
@@ -430,11 +463,29 @@ mode "$mode_launcher" {
 #exec firefox
 #exec --no-startup-id fcitx -d 
 exec --no-startup-id rmmod pcspkr
+# exec --no-startup-id modprobe --force-vermagic -a vmw_vmci vmmon
 exec --no-startup-id xrdb ~/.Xdefaults 
 # run polybar
-#exec_always --no-startup-id ~/.config/polybar/launch.sh
+exec_always --no-startup-id ~/.config/polybar/launch.sh
+# 
 exec_always --no-startup-id ~/.config/shadowsocks/shadowsocks.sh
-bar {
-    status_command i3status
-    position bottom
-}
+# exec_always --no-startup-id ~/.screenlayout/monitor.sh
+exec_always --no-startup-id /usr/bin/fcitx
+exec_always --no-startup-id /usr/bin/mate-power-manager
+# bar {
+   # mode dock
+  # modifier None
+      # colors {
+        # background #000000
+        # statusline #00A5FF
+        # separator #666666
+        # focused_workspace  #4c7899 #285577 #ffffff
+        # active_workspace   #333333 #5f676a #ffffff
+        # inactive_workspace #333333 #222222 #888888
+        # urgent_workspace   #2f343a #900000 #ffffff
+    # }
+    # status_command i3status -c ~/.config/i3status/config
+    # status_command ~/.config/i3status/.i3status.sh
+    # status_command i3blocks
+    # position top
+# }

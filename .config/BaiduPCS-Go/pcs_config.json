@@ -1,0 +1,22 @@
+{
+ "baidu_active_uid": 2394166576,
+ "baidu_user_list": [
+  {
+   "uid": 2394166576,
+   "name": "拓川苏景",
+   "sex": "unknown",
+   "age": 2.5,
+   "bduss": "mRLWElMenFuTTNCOTIybW91c3hvUzZPQk9uSE5VRG1uallPQlFWTWR5cjJVcEpiQVFBQUFBJCQAAAAAAAAAAAEAAAAwFbSOzdi0qMvVvrAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPbFalv2xWpbS",
+   "ptoken": "",
+   "stoken": "",
+   "workdir": "/music"
+  }
+ ],
+ "appid": 260149,
+ "cache_size": 30000,
+ "max_parallel": 100,
+ "max_download_load": 1,
+ "user_agent": "netdisk;1.0",
+ "savedir": "/home/zxh/Downloads",
+ "enable_https": false
+}

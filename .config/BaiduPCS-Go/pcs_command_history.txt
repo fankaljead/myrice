@@ -1,0 +1,143 @@
+ls
+cd 我的资源
+ｈ
+help
+ls
+download 小丑回魂.2017.HD720P.韩版英语中字.mp4 
+q
+exig
+exit
+ls
+download 古典武侠小说下载.zip 
+ls
+help
+quit
+ls
+cd ..
+ls
+download 金庸作品集.zip 
+cd 我的资源/2017奥斯卡提名/
+
+cd ..
+ls
+download 诛仙一二合集.txt
+ls
+2ls
+help
+quota
+help
+ls
+download 城堡岩.2018/
+cd 女子
+ls
+download 女子\ 第一季/
+ls
+ls 女子\ 第一季/
+cd ..
+ls
+cd Universe/21633492436_6f5a61e2fe_k.jpg 
+ls Universe/
+download Universe/
+ls
+cd ..
+ls
+cd GO\ T/
+ls
+cd Game.of.Thrones.S02.1080p/
+ls
+download game.of.thrones.s02e01.1080p.bluray.x264-rovers.mkv 
+ls
+cd ../..
+ls
+cd 我的资源/
+ls
+quota 
+quit
+ls
+cd 生活大爆炸/
+ls
+cd 1-9季/
+ls
+download 第五季
+download 生H大B炸\ 第五季/
+quit 
+download 生H大B炸\ 第六季/
+cd
+cd ..
+ls
+download 风骚1-3季\ .torrent 
+ls
+download WALL.E.2008.双语字幕.国英粤音轨.HR-HDTV.AC3.1024x576.x264.mkv 
+ls
+cd 老友记高清/第10季/
+cd ..
+download 第6季/
+quit 
+cd ..
+ls
+cd 学习
+ls
+cd 学习
+ls
+cd ..
+ls
+cd book
+;s
+ls
+cd ..
+cd book
+cd 新建文件夹
+ls
+quit
+cd ..
+cd
+cd /
+cd 我的资源
+ls
+cd /
+ls
+cd 毛骗3终结篇/01.HD720P.国语中字.mkv 
+cd 毛骗3终结篇/
+ls
+cd ..
+download 毛骗3终结篇/01.HD720P.国语中字.mkv 
+download 毛骗3终结篇/
+quir
+quit
+cd book/
+ls
+download Shell脚本学习指南_中文版@www.java1234.com.pdf 
+cd 我的资源
+cd /
+cd 我的资源
+ls
+quit
+ls
+download Red Sorghum.1988.BD.1080P.x265.10bit.AC3.国语.中字-FFans@godboy714.PDF 
+download Red\ Sorghum.1988.BD.1080P.x265.10bit.AC3.国语.中字-FFans@godboy714.PDF 1.9.3/
+cd 生活大爆炸/
+ls
+cd 1-9季/
+ls
+download 生H大B炸\ 第七季/
+ls
+quit
+ls
+cd
+cd /
+ls
+q
+quit
+ls
+search emacs
+search *.pdf
+quir
+quit
+ls
+cd music/Avril\ Lavigne/
+cd ..
+ls
+download No\ Doubt/
+ls
+ls sia
+quit

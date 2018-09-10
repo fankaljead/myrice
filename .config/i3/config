@@ -28,7 +28,8 @@ font xft:Droid Sans Pro 10
 floating_modifier $mod
 
 # start a terminal
-set $terminal st
+set $terminal terminator
+set $terminal2 st
 # set $terminal terminator
 bindsym $mod+Return exec $terminal
 bindsym $mod+Shift+Return exec $terminal -e tmux
@@ -52,7 +53,7 @@ bindsym $mod+z exec --no-startup-id morc_menu
 ################################################################################################
 
 exec --no-startup-id volumeicon
-bindsym $mod+Ctrl+m exec $terminal -e 'alsamixer'
+bindsym $mod+Ctrl+m exec $terminal2 -e 'alsamixer'
 #exec --no-startup-id pulseaudio
 #exec --no-startup-id pa-applet
 #bindsym $mod+Ctrl+m exec pavucontrol
@@ -65,8 +66,10 @@ bindsym $mod+Ctrl+m exec $terminal -e 'alsamixer'
 
 # Start Applications
 bindsym $mod+Ctrl+b exec $terminal -e 'bmenu'
+# 百度网盘
+bindsym $mod+Ctrl+u exec $terminal -e 'baidupcs'
 bindsym $mod+Ctrl+v exec $terminal -e 'nvim'
-bindsym $mod+Shift+f exec $terminal -e 'ranger'
+bindsym $mod+Shift+f exec st -e 'ranger'
 bindsym $mod+F2 exec palemoon
 bindsym $mod+F3 exec pcmanfm
 bindsym Mod1+e exec pcmanfm
@@ -82,9 +85,10 @@ bindsym $mod+t exec --no-startup-id pkill compton
 bindsym $mod+Ctrl+t exec --no-startup-id compton -bfcelmzrotID
 #bindsym $mod+Ctrl+t exec --no-startup-id compton --xrender-sync-fence
 bindsym $mod+Shift+d --release exec "killall dunst; exec notify-send 'restart dunst'"
-bindsym $mod+Ctrl+a exec --no-startup-id i3-scrot
-bindsym $mod+Print --release exec --no-startup-id i3-scrot -w
-bindsym $mod+Shift+Print --release exec --no-startup-id i3-scrot -s
+bindsym $mod+Ctrl+a exec --no-startup-id deepin-screenshot
+bindsym $mod+Print --release exec --no-startup-id deepin-screenshot # 截图
+bindsym $mod+p --release exec --no-startup-id deepin-screenshot # 截图
+bindsym $mod+Shift+Print --release exec --no-startup-id deepin-screen-recorder # 录屏
 bindsym Mod1+Shift+h exec xdg-open /usr/share/doc/manjaro/i3_help.pdf
 bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
 
@@ -178,14 +182,14 @@ bindsym $mod+Ctrl+Left workspace prev
 # set $ws8 8
 
 
-set $ws1 1 
-set $ws2 2
-set $ws3 3
-set $ws4 4 
-set $ws5 5
-set $ws6 6
-set $ws7 7
-set $ws8 8
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"
+set $ws4 "4"
+set $ws5 "5"
+set $ws6 "6"
+set $ws7 "7"
+set $ws8 "8"
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
@@ -222,12 +226,12 @@ bindsym $mod+Shift+8 move container to workspace $ws8; workspace $ws8
 # assign [class="Pale moon"] $ws2
 # assign [class="Pcmanfm"] $ws3
 # assign [class="Skype"] $ws5
- assign [class="Firefox"] $ws1
- assign [class="netease-cloud-musi"] $ws3
- assign [class="Gvim"] $ws4
- assign [class="Emacs"] $ws5
- assign [class="Thunderbird"] $ws6
- assign [class="deepin-system-monitor"] $ws7
+ # assign [class="Firefox"] $ws1
+ # assign [class="netease-cloud-musi"] $ws3
+ # assign [class="Gvim"] $ws4
+ # assign [class="Emacs"] $ws5
+ # assign [class="Thunderbird"] $ws6
+ # assign [class="deepin-system-monitor"] $ws7
 
 # Open specific applications in floating mode
 for_window [title="alsamixer"] floating enable border pixel 1
@@ -241,6 +245,7 @@ for_window [class="Lightdm-gtk-greeter-settings"] floating enable
 for_window [class="Lxappearance"] floating enable sticky enable border normal
 for_window [class="Manjaro-hello"] floating enable
 for_window [class="mpv"] floating enable sticky border normal
+for_window [class="VirtualBox Manager"] floating enable border pixel 1
 for_window [class="Manjaro Settings Manager"] floating enable border normal
 
 for_window [title="MuseScore: Play Panel"] floating enable
@@ -257,7 +262,7 @@ for_window [class="(?i)System-config-printer.py"] floating enable border normal
 for_window [class="Skype"] floating enable border normal
 for_window [class="Thus"] floating enable border normal
 for_window [class="Timeset-gui"] floating enable border normal
-for_window [class="(?i)virtualbox"] floating enable border normal
+# for_window [class="(?i)virtualbox"] floating enable border normal
 for_window [class="Xfburn"] floating enable
 
 # switch to workspace with urgent window automatically
@@ -441,7 +446,7 @@ mode "$mode_gaps_outer" {
         bindsym Return mode "default"
         bindsym Escape mode "default"
 }
-exec_always feh --bg-center ~/mytemp/wallpaper.jpg
+# exec_always --no-startup-id feh --bg-scale ~/下载/64409ac368d7da5cee26473aaf14a678.jpg ~/下载/8b1bb1f1f88c287fbec734bf0e5cdd3d.jpg
 # Press $mod+o followed by either f, t, Escape or Return to launch firefox,
 # thunderbird or return to the default mode, respectively.
 set $mode_launcher Launch: [f]irefox [t]hunderbird [e]macs [n]etease-cloud-music [g]oogle-chrome [v]s-code [m]onotor
@@ -466,10 +471,12 @@ exec --no-startup-id rmmod pcspkr
 # exec --no-startup-id modprobe --force-vermagic -a vmw_vmci vmmon
 exec --no-startup-id xrdb ~/.Xdefaults 
 # run polybar
-exec_always --no-startup-id ~/.config/polybar/launch.sh
+# exec_always --no-startup-id ~/.config/polybar/launch.sh
+ exec_always --no-startup-id xfce4-panel
+#
 # 
 exec_always --no-startup-id ~/.config/shadowsocks/shadowsocks.sh
-# exec_always --no-startup-id ~/.screenlayout/monitor.sh
+exec_always --no-startup-id ~/.screenlayout/monitor.sh
 exec_always --no-startup-id /usr/bin/fcitx
 exec_always --no-startup-id /usr/bin/mate-power-manager
 # bar {

@@ -9,7 +9,6 @@
 
 " This line should not be removed as it ensures that various options are
 " properly set to work with the Vim-related packages.
-runtime! archlinux.vim
 
 " If you prefer the old-style vim functionalty, add 'runtime! vimrc_example.vim'
 " Or better yet, read /usr/share/vim/vim80/vimrc_example.vim or the vim manual
@@ -20,9 +19,6 @@ runtime! archlinux.vim
 
 " set nu
 " set rnu
-
-set nonumber
-set norelativenumber
 
 function! ToggleHiddenAll()
     if s:hidden_all  == 0
@@ -89,7 +85,7 @@ set autoread
 
 " With a map leader it's possible to do extra key combinations
 " like <leader>w saves the current file
-let mapleader = " "
+let mapleader = ","
 
 " Fast saving
 nmap <leader>w :w!<cr>
@@ -194,10 +190,15 @@ set background=dark
 
 " Set extra options when running in GUI mode
 if has("gui_running")
-    set guioptions-=T
-    set guioptions-=e
     set t_Co=256
     set guitablabel=%M\ %t
+    set guioptions-=T              " 去除工具栏
+    set guioptions-=m              " 去除顶部的菜单栏
+    set guioptions-=l              " 去除左边的滚动条
+    set guioptions-=L              " 去除左边的滚动条
+    set guioptions-=r              " 去除右边的滚动条
+    set guioptions-=R              " 去除右边的滚动条
+    set guifont=DejaVu\ Sans\ Mono\ For\ POWERLINE:h14       " 设置字体
 endif
 
 " Set utf8 as standard encoding and en_US as the standard language

@@ -51,4 +51,11 @@ M-ret t n 添加表格
  | M-S-RET             | 插入一个和当前标题同级的TODO项                                                                                     |
  | TAB(新的空的条目中) | 如果新的条目中还没有文字，TAB会调整到合适的级别                                                                    |
  | M-LEFT/RIGHT        | 将当前标题提升/下降一个等级                                                                                        |
- | M-S-UP/DOWN         | 将子树上移/下移                                                                                                           |
+** todos
+*** DONE hello
+    CLOSED: [2018-11-21 周三 22:52]
+*** TODO do some 
+*** DONE do joke 
+    CLOSED: [2018-11-21 周三 22:54]
+*** TODO do home
+

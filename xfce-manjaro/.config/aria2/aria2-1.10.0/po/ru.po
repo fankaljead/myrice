@@ -1,0 +1,2900 @@
+# translation of ru.po to
+# Russian translations for aria2c package
+# Английские переводы для пакета aria2c.
+# Copyright (C) 2006 Tatsuhiro Tsujikawa
+# This file is distributed under the same license as the aria2c package.
+#
+#  <azamat.hackimov@gmail.com>, 2006.
+# Azamat H. Hackimov <azamat.hackimov@gmail.com>, 2006.
+msgid ""
+msgstr ""
+"Project-Id-Version: ru\n"
+"Report-Msgid-Bugs-To: http://aria2.sourceforge.net/\n"
+"POT-Creation-Date: 2010-07-19 14:47+0900\n"
+"PO-Revision-Date: 2010-04-16 06:55+0000\n"
+"Last-Translator: Max Belozerov <Unknown>\n"
+"Language-Team: <ru@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2010-04-26 12:52+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
+
+#: src/DownloadEngine.cc:222
+msgid ""
+"Shutdown sequence commencing... Press Ctrl-C again for emergency shutdown."
+msgstr ""
+"Завершаем выполнение программы... Нажмите Ctrl-C для экстренного завершения."
+
+#: src/DownloadEngine.cc:229
+msgid "Emergency shutdown sequence commencing..."
+msgstr "Экстренное завершение..."
+
+#: src/MultiUrlRequestInfo.cc:115
+msgid "aria2 will resume download if the transfer is restarted."
+msgstr "aria2 продолжит загрузку, если передача будет перезапущена."
+
+#: src/MultiUrlRequestInfo.cc:117
+msgid ""
+"If there are any errors, then see the log file. See '-l' option in help/man "
+"page for details."
+msgstr ""
+"Если возникли какие-либо ошибки, проверьте log-файл. Для более подробной "
+"информации смотрите описание опции '-l'."
+
+#: src/RequestGroupMan.cc:587
+msgid "Download Results:"
+msgstr "Результат загрузки:"
+
+#: src/RequestGroupMan.cc:647
+msgid "Status Legend:"
+msgstr "Использованные обозначения:"
+
+#: src/OptionHandler.cc:38
+msgid "                              Default: "
+msgstr "                              По умолчанию: "
+
+#: src/OptionHandler.cc:39
+msgid "                              Tags: "
+msgstr "                              Метки: "
+
+#: src/OptionHandler.cc:40
+msgid "                              Possible Values: "
+msgstr "                              Возможные значения: "
+
+#: src/OptionHandlerImpl.h:137
+msgid "must be either 'true' or 'false'."
+msgstr "должно быть 'true' или 'false'."
+
+#: src/OptionHandlerImpl.h:171 src/OptionHandlerImpl.h:220
+#, c-format
+msgid "must be between %s and %s."
+msgstr "должно быть между %s и %s."
+
+#: src/OptionHandlerImpl.h:217
+#, c-format
+msgid "must be smaller than or equal to %s."
+msgstr "должно быть меньше или равно %s."
+
+#: src/OptionHandlerImpl.h:223
+#, c-format
+msgid "must be greater than or equal to %s."
+msgstr "должно быть больше или равно %s."
+
+#: src/OptionHandlerImpl.h:226 src/OptionHandlerImpl.h:304
+msgid "must be a number."
+msgstr "должно быть числом."
+
+#: src/OptionHandlerImpl.h:295
+#, c-format
+msgid "must be smaller than or equal to %.1f."
+msgstr "должно быть меньше или равно %.1f."
+
+#: src/OptionHandlerImpl.h:298
+#, c-format
+msgid "must be between %.1f and %.1f."
+msgstr "должно быть между %.1f и %.1f."
+
+#: src/OptionHandlerImpl.h:301
+#, c-format
+msgid "must be greater than or equal to %.1f."
+msgstr "должно быть больше или равно %.1f."
+
+#: src/OptionHandlerImpl.h:479
+msgid "must be one of the following:"
+msgstr "должно быть одним из следующих:"
+
+#: src/OptionHandlerImpl.h:529 src/OptionHandlerImpl.h:664
+msgid "unrecognized proxy format"
+msgstr "неизвестный формат прокси"
+
+#: src/usage_text.h:37
+msgid ""
+" -d, --dir=DIR                The directory to store the downloaded file."
+msgstr " -d, --dir=DIR                Каталог для сохранения скачанных файлов."
+
+#: src/usage_text.h:39
+msgid ""
+" -o, --out=FILE               The file name of the downloaded file. When -Z\n"
+"                              option is used, this option is ignored."
+msgstr ""
+" -o, --out=FILE Сохранить загруженный файл под указанным именем.\n"
+"                              Если используется ключ -Z, то данный ключ "
+"игнорируется."
+
+#: src/usage_text.h:42
+msgid ""
+" -l, --log=LOG                The file name of the log file. If '-' is\n"
+"                              specified, log is written to stdout."
+msgstr ""
+" -l, --log=LOG                Имя файла для логов. Если указано \"-\",\n"
+"                              логи будут выведены в stdout."
+
+#: src/usage_text.h:45
+msgid ""
+" -D, --daemon                 Run as daemon. The current working directory "
+"will\n"
+"                              be changed to \"/\" and standard input, "
+"standard\n"
+"                              output and standard error will be redirected "
+"to\n"
+"                              \"/dev/null\"."
+msgstr ""
+" -D, --daemon Запустить как демон (фоновый процесс). Текущая директория "
+"будет\n"
+"                              заменена на \"/\"; стандартный ввод, "
+"стандартный вывод\n"
+"                              и стандартный вывод ошибок будут "
+"перенаправлены на\n"
+"                              \"/dev/null\"."
+
+#: src/usage_text.h:50
+#, fuzzy
+msgid ""
+" -s, --split=N                Download a file using N connections. If more\n"
+"                              than N URLs are given, first N URLs are used "
+"and\n"
+"                              remaining URLs are used for backup. If less "
+"than\n"
+"                              N URLs are given, those URLs are used more "
+"than\n"
+"                              once so that N connections total are made\n"
+"                              simultaneously. The number of connections to "
+"the\n"
+"                              same host is restricted by\n"
+"                              --max-connection-per-server option. Please see "
+"-j\n"
+"                              and --min-split-size option too.\n"
+"                              Please note that in Metalink download, this\n"
+"                              option has no effect and use -C option instead."
+msgstr ""
+" -s, --split=N Загрузить файл, используя N подключений. Если задано\n"
+"                              больше N URL, тогда первые N URL будут "
+"использоваться, а\n"
+"                              другие URL будут оставлены для резерва. Если "
+"задано меньше\n"
+"                              чем N URL, то эти URL будут использоваться "
+"больше одного\n"
+"                              раза, значит всего N соединений будет создано\n"
+"                              одновременно. Пожалуйста, смотрите также "
+"параметр -j.\n"
+"                              Пожалуйста обратите внимание на то, что в "
+"Metalink загрузках этот\n"
+"                              параметр не имеет влияния и используйте вместо "
+"него параметр -C."
+
+#: src/usage_text.h:62
+msgid ""
+" --retry-wait=SEC             Set the seconds to wait to retry after an "
+"error\n"
+"                              has occured."
+msgstr ""
+" --retry-wait=SEC Устанавливает интервал ожидания ввода (в секундах)\n"
+"                              после произошедшей ошибки."
+
+#: src/usage_text.h:65
+msgid " -t, --timeout=SEC            Set timeout in seconds."
+msgstr " -t, --timeout=SEC Устанавливает timeout в секундах."
+
+#: src/usage_text.h:67
+msgid " -m, --max-tries=N            Set number of tries. 0 means unlimited."
+msgstr ""
+" -m, --max-tries=N Устанавливает количество попыток, '0' означает "
+"'неограниченно'."
+
+#: src/usage_text.h:69
+msgid ""
+" --http-proxy=PROXY           Use this proxy server for HTTP. To erase\n"
+"                              previously defined proxy, use \"\".\n"
+"                              See also  --all-proxy option.\n"
+"                              This affects all URLs."
+msgstr ""
+" --http-proxy=PROXY Использовать указанный прокси-сервер \n"
+"                    для HTTP. Ранее указанный адрес можно \n"
+"                    стереть, указав \"\". \n"
+"                    Также см. параметр --all-proxy. \n"
+"                    Влияет на все URL."
+
+#: src/usage_text.h:74
+msgid ""
+" --https-proxy=PROXY          Use this proxy server for HTTPS. To erase\n"
+"                              previously defined proxy, use \"\".\n"
+"                              See also  --all-proxy option.\n"
+"                              This affects all URLs."
+msgstr ""
+" -https-proxy=PROXY Использовать указанный прокси-сервер \n"
+"                    для HTTPS. Ранее указанный адрес можно \n"
+"                    стереть, указав \"\". \n"
+"                    Также см. параметр --all-proxy. \n"
+"                    Влияет на все URL."
+
+#: src/usage_text.h:79
+msgid ""
+" --ftp-proxy=PROXY            Use this proxy server for FTP. To erase "
+"previously\n"
+"                              defined proxy, use \"\".\n"
+"                              See also  --all-proxy option.\n"
+"                              This affects all URLs."
+msgstr ""
+" --ftp-proxy=PROXY Использовать указанный прокси-сервер \n"
+"                    для FTP. Ранее указанный адрес можно \n"
+"                    стереть, указав \"\". \n"
+"                    Также см. параметр --all-proxy. \n"
+"                    Влияет на все URL."
+
+#: src/usage_text.h:84
+msgid ""
+" --all-proxy=PROXY            Use this proxy server for all protocols. To "
+"erase\n"
+"                              previously defined proxy, use \"\".\n"
+"                              You can override this setting and specify a\n"
+"                              proxy server for a particular protocol using\n"
+"                              --http-proxy, --https-proxy and --ftp-proxy\n"
+"                              options.\n"
+"                              This affects all URLs."
+msgstr ""
+" --all-proxy=PROXY Использовать указанный прокси-сервер \n"
+"                    для всех протоколов. Ранее указанный \n"
+"                    адрес можно стереть, указав \"\". \n"
+"                    Параметры --http-proxy, --https-proxy \n"
+"                    и --ftp-proxy, указывающие прокси-\n"
+"                    серверы для отдельных протоколов, \n"
+"                    имеют более высокий приоритет. \n"
+"                    Влияет на все URL."
+
+#: src/usage_text.h:92
+msgid " --http-user=USER             Set HTTP user. This affects all URLs."
+msgstr " --http-user=USER Указать пользователя для HTTP. Влияет на все URL."
+
+#: src/usage_text.h:94
+msgid " --http-passwd=PASSWD         Set HTTP password. This affects all URLs."
+msgstr " --http-passwd=PASSWD Указать пароль для HTTP. Влияет на все URL."
+
+#: src/usage_text.h:96
+msgid " --proxy-method=METHOD        Set the method to use in proxy request."
+msgstr ""
+" --proxy-method=METHOD Задать метод для использования в прокси-запросах."
+
+#: src/usage_text.h:98
+msgid " --referer=REFERER            Set Referer. This affects all URLs."
+msgstr " --referer=REFERER Указать реферер. Влияет на все URL."
+
+#: src/usage_text.h:100
+msgid " --ftp-user=USER              Set FTP user. This affects all URLs."
+msgstr " --ftp-user=USER Указать имя пользователя для FTP. Влияет на все URL."
+
+#: src/usage_text.h:102
+msgid " --ftp-passwd=PASSWD          Set FTP password. This affects all URLs."
+msgstr " --ftp-passwd=PASSWD Указать пароль для FTP. Влияет на все URL."
+
+#: src/usage_text.h:104
+msgid " --ftp-type=TYPE              Set FTP transfer type."
+msgstr " --ftp-type=TYPE Указать тип передачи для FTP."
+
+#: src/usage_text.h:106
+msgid ""
+" -p, --ftp-pasv[=true|false]  Use the passive mode in FTP. If false is "
+"given,\n"
+"                              the active mode will be used."
+msgstr ""
+" -p, --ftp-pasv[=true|false] Использовать пассивный режим FTP. Если указано "
+"false,\n"
+"то будет использован активный режим."
+
+#: src/usage_text.h:109
+msgid ""
+" --lowest-speed-limit=SPEED   Close connection if download speed is lower "
+"than\n"
+"                              or equal to this value(bytes per sec).\n"
+"                              0 means aria2 does not have a lowest speed "
+"limit.\n"
+"                              You can append K or M(1K = 1024, 1M = 1024K).\n"
+"                              This option does not affect BitTorrent "
+"downloads."
+msgstr ""
+" --lowest-speed-limit=SPEED Закрывает подключение, если скорость загрузки "
+"меньше\n"
+"                              или равна или равна этому значению (байт в "
+"секунду).\n"
+"                              0 означает, что aria2 не имеет нижнего "
+"ограничения скорости.\n"
+"                              Вы можете добавить K или M(1K = 1024, 1M = "
+"1024K).\n"
+"                              Этот параметр не влияет на BitTorrent загрузки."
+
+#: src/usage_text.h:115
+msgid ""
+" --max-overall-download-limit=SPEED Set max overall download speed in bytes/"
+"sec.\n"
+"                              0 means unrestricted.\n"
+"                              You can append K or M(1K = 1024, 1M = 1024K).\n"
+"                              To limit the download speed per download, use\n"
+"                              --max-download-limit option."
+msgstr ""
+" --max-overall-download-limit=SPEED Установить максимальную общую скорость "
+"загрузки в байтах/сек.\n"
+"                              0 значит не ограничена.\n"
+"                              Вы можете добавить K или M(1K = 1024, 1M = "
+"1024K).\n"
+"                              Чтобы ограничить скорость загрузки для узла, "
+"используйте\n"
+"                              параметр --max-download-limit."
+
+#: src/usage_text.h:121
+msgid ""
+" --max-download-limit=SPEED   Set max download speed per each download in\n"
+"                              bytes/sec. 0 means unrestricted.\n"
+"                              You can append K or M(1K = 1024, 1M = 1024K).\n"
+"                              To limit the overall download speed, use\n"
+"                              --max-overall-download-limit option."
+msgstr ""
+" --max-download-limit=SPEED Установить максимальную скорость каждого узла "
+"загрузки в\n"
+"                              байтах/сек. 0 означает неограниченно.\n"
+"                              Вы можете добавить K или M(1K = 1024, 1M = "
+"1024K).\n"
+"                              Чтоб ограничить общую скорость загрузки, "
+"используйте\n"
+"                              параметр  --max-overall-download-limit."
+
+#: src/usage_text.h:127
+msgid ""
+" --file-allocation=METHOD     Specify file allocation method.\n"
+"                              'none' doesn't pre-allocate file space. "
+"'prealloc'\n"
+"                              pre-allocates file space before download "
+"begins.\n"
+"                              This may take some time depending on the size "
+"of\n"
+"                              the file.\n"
+"                              If you are using newer file systems such as "
+"ext4\n"
+"                              (with extents support), btrfs or xfs, 'falloc' "
+"is\n"
+"                              your best choice. It allocates large(few GiB)\n"
+"                              files almost instantly. Don't use 'falloc' "
+"with\n"
+"                              legacy file systems such as ext3 because it "
+"takes\n"
+"                              almost same time as 'prealloc' and it blocks "
+"aria2\n"
+"                              entirely until allocation finishes. 'falloc' "
+"may\n"
+"                              not be available if your system doesn't have\n"
+"                              posix_fallocate() function."
+msgstr ""
+" --file-allocation=METHOD Указать метод размещения файла.\n"
+"                              'none' не происходит предварительное "
+"резервирование места для файла. 'prealloc' -\n"
+"                              предварительное резервирование места для файла "
+"перед началом загрузки.\n"
+"                              Это может продолжаться некоторое время, в "
+"зависимости от размера\n"
+"                              файла.\n"
+"                              Если Вы используете новые файловые системы, "
+"наподобие ext4\n"
+"                              (с поддержкой диапазонов), btrfs или xfs, "
+"тогда лучше\n"
+"                              выбрать 'falloc' . Так как они резервируют "
+"место под большие (на несколько Гигабайт)\n"
+"                              файлы почти мгновенно. Не используйте 'falloc' "
+"вместе с\n"
+"                              наследными файловыми системами, такими как "
+"ext3 потому, что это будет продолжаться\n"
+"                              почти столько же времени, как и 'prealloc', а "
+"также полностью заблокирует aria2,\n"
+"                              пока не окончится резервирование места. "
+"'falloc' может\n"
+"                              не быть доступным, если Ваша система не "
+"содержит\n"
+"                              функциюї posix_fallocate()."
+
+#: src/usage_text.h:142
+msgid ""
+" --no-file-allocation-limit=SIZE No file allocation is made for files whose\n"
+"                              size is smaller than SIZE.\n"
+"                              You can append K or M(1K = 1024, 1M = 1024K)."
+msgstr ""
+" --no-file-allocation-limit=SIZE Не резервируется место для файлов,\n"
+"                              размер которых меньше SIZE.\n"
+"                              Вы можете добавить K или M(1K = 1024, 1M = "
+"1024K)."
+
+#: src/usage_text.h:146
+msgid ""
+" --enable-direct-io[=true|false] Enable directI/O, which lowers cpu usage "
+"while\n"
+"                              allocating files.\n"
+"                              Turn off if you encounter any error"
+msgstr ""
+" --enable-direct-io[=true|false] Разрешить прямое I/O (чтение/запись), "
+"которое уменьшает использование cpu (процессора) во\n"
+"                              время резервирования места для файла.\n"
+"                              Выключите, если произошла какая-либо ошибка"
+
+#: src/usage_text.h:150
+msgid ""
+" --allow-overwrite=true|false Restart download from scratch if the\n"
+"                              corresponding control file doesn't exist.  "
+"See\n"
+"                              also --auto-file-renaming option."
+msgstr ""
+" --allow-overwrite=true|false Заново загрузить файл, если \n"
+"                    соответствующий контрольный файл \n"
+"                    отсутствует.\n"
+"                    См. также параметр --auto-file-renaming"
+
+#: src/usage_text.h:154
+msgid ""
+" --allow-piece-length-change=true|false If false is given, aria2 aborts "
+"download\n"
+"                              when a piece length is different from one in\n"
+"                              a control file. If true is given, you can "
+"proceed\n"
+"                              but some download progress will be lost."
+msgstr ""
+" --allow-piece-length-change=true|false Если установлено false (ложь), aria2 "
+"останавливает загрузку,\n"
+"                              когда длина блока отлична от той, которая "
+"находится в\n"
+"                              контрольном файле. Если установлено true "
+"(истина), Вы можете продолжать,\n"
+"                              однако некоторый прогресс загрузки будет "
+"потерян."
+
+#: src/usage_text.h:159
+msgid ""
+" -Z, --force-sequential[=true|false] Fetch URIs in the command-line "
+"sequentially\n"
+"                              and download each URI in a separate session, "
+"like\n"
+"                              the usual command-line download utilities."
+msgstr ""
+" -Z, --force-sequential[=true|false] Получить URI в последовательности\n"
+"                              командной строки и загрузить каждое URI в "
+"отдельной сессии, как в\n"
+"                              обычных утилитах загрузки командной строки."
+
+#: src/usage_text.h:163
+msgid ""
+" --auto-file-renaming[=true|false] Rename file name if the same file "
+"already\n"
+"                              exists. This option works only in http(s)/ftp\n"
+"                              download.\n"
+"                              The new file name has a dot and a number"
+"(1..9999)\n"
+"                              appended."
+msgstr ""
+" --auto-file-renaming[=true|false] Переименовывает файл, если такой уже\n"
+"                              существует. Этот параметр работает только для "
+"загрузок по\n"
+"                              http(s)/ftp.\n"
+"                              К имени файла будет добавлена точка и число от "
+"1 до 9999."
+
+#: src/usage_text.h:169
+msgid ""
+" -P, --parameterized-uri[=true|false] Enable parameterized URI support.\n"
+"                              You can specify set of parts:\n"
+"                              http://{sv1,sv2,sv3}/foo.iso\n"
+"                              Also you can specify numeric sequences with "
+"step\n"
+"                              counter:\n"
+"                              http://host/image[000-100:2].img\n"
+"                              A step counter can be omitted.\n"
+"                              If all URIs do not point to the same file, "
+"such\n"
+"                              as the second example above, -Z option is\n"
+"                              required."
+msgstr ""
+" -P, --parameterized-uri[=true|false] Разрешить поддержку параметризованных "
+"URI.\n"
+"                              Вы можете указать группу частей:\n"
+"                              http://{sv1,sv2,sv3}/foo.iso\n"
+"                              Также Вы можете указать числовую "
+"последовательность с шагом\n"
+"                              счетчика:\n"
+"                              http://host/image[000-100:2].img\n"
+"                              Шагом счетчика можно пренебречь.\n"
+"                              Если все URI не указывают на такой же файл,\n"
+"                              как во втором приведенном выше примере, то "
+"необходим\n"
+"                              параметр -Z."
+
+#: src/usage_text.h:180
+msgid ""
+" --enable-http-keep-alive[=true|false] Enable HTTP/1.1 persistent connection."
+msgstr ""
+" --enable-http-keep-alive[=true|false] Разрешить HTTP/1.1 надёжное "
+"соединение."
+
+#: src/usage_text.h:182
+msgid " --enable-http-pipelining[=true|false] Enable HTTP/1.1 pipelining."
+msgstr ""
+" --enable-http-pipelining[=true|false] Разрешить конвейерную обработку "
+"HTTP/1.1."
+
+#: src/usage_text.h:184
+msgid ""
+" -V, --check-integrity[=true|false] Check file integrity by validating "
+"piece\n"
+"                              hashes. This option has effect only in "
+"BitTorrent\n"
+"                              and Metalink downloads with chunk checksums.\n"
+"                              Use this option to re-download a damaged "
+"portion\n"
+"                              of a file. See also --bt-hash-check-seed "
+"option."
+msgstr ""
+" -V, --check-integrity[=true|false] Проверить целостность файла путём "
+"подтверждения хеша\n"
+"                              блока. Этот параметр влияет лишь на "
+"BitTorrent\n"
+"                              и Metalink загрузки с контрольной суммой "
+"блоков.\n"
+"                              Используйте этот параметр, чтобы перезагрузить "
+"поврежденную часть\n"
+"                              файла. Смотрите также параметр --bt-hash-check-"
+"seed."
+
+#: src/usage_text.h:190
+msgid ""
+" --bt-hash-check-seed[=true|false] If true is given, after hash check using\n"
+"                              --check-integrity option and file is "
+"complete,\n"
+"                              continue to seed file. If you want to check "
+"file\n"
+"                              and download it only when it is damaged or\n"
+"                              incomplete, set this option to false.\n"
+"                              This option has effect only on BitTorrent\n"
+"                              download."
+msgstr ""
+" --bt-hash-check-seed[=true|false] Если задано true (да), то после проверки "
+"хеша с использованием\n"
+"                              параметра --check-integrity , когда файл "
+"целостен,\n"
+"                              продолжается сидирование файла. Если Вы "
+"желаете проверить файл\n"
+"                              и загрузить его только ежели он поврежден или\n"
+"                              неполный, то установите в этом параметре false "
+"(нет).\n"
+"                              Этот параметр влияет лишь на BitTorrent\n"
+"                              загрузки."
+
+#: src/usage_text.h:198
+msgid ""
+" --realtime-chunk-checksum=true|false  Validate chunk of data by "
+"calculating\n"
+"                              checksum while downloading a file if chunk\n"
+"                              checksums are provided."
+msgstr ""
+" --realtime-chunk-checksum=true|false Подтвердить правильность блока данных "
+"путем вычисления\n"
+"                              контрольной суммы во время загрузки файла, "
+"если предусмотрена\n"
+"                              контрольная сумма блоков."
+
+#: src/usage_text.h:202
+msgid ""
+" -c, --continue               Continue downloading a partially downloaded\n"
+"                              file. Use this option to resume a download\n"
+"                              started by a web browser or another program\n"
+"                              which downloads files sequentially from the\n"
+"                              beginning. Currently this option is only\n"
+"                              applicable to http(s)/ftp downloads."
+msgstr ""
+" -c, --continue Продолжить загрузку частично загруженного\n"
+"                              файла. Используйте этот параметр, чтоб  "
+"возобновить загрузку,\n"
+"                              начатую в веб-браузере или в другой "
+"программе,\n"
+"                              которая загружает файлы последовательно с\n"
+"                              начала. Сейчас этот параметр можно\n"
+"                              использовать только для http(s)/ftp загрузок."
+
+#: src/usage_text.h:209
+msgid " -U, --user-agent=USER_AGENT  Set user agent for http(s) downloads."
+msgstr ""
+" -U, --user-agent=USER_AGENT Указать агент пользователя для http(s) загрузок."
+
+#: src/usage_text.h:211
+msgid " -n, --no-netrc               Disables netrc support."
+msgstr " -n, --no-netrc Отключить поддержку netrc."
+
+#: src/usage_text.h:213
+msgid ""
+" -i, --input-file=FILE        Downloads URIs found in FILE. You can specify\n"
+"                              multiple URIs for a single entity: separate\n"
+"                              URIs on a single line using the TAB "
+"character.\n"
+"                              Reads input from stdin when '-' is specified.\n"
+"                              The additional out and dir options can be\n"
+"                              specified after each line of URIs. This "
+"optional\n"
+"                              line must start with white space(s). See "
+"INPUT\n"
+"                              FILE section of man page for details."
+msgstr ""
+" -i, --input-file=FILE Загрузить URI, найденные в FILE. Вы можете указать\n"
+"                              несколько URI для одного объекта: отделяйте\n"
+"                              URI на одной строке, используя символ TAB.\n"
+"                              Читается ввод из stdin (стандартного потока "
+"ввода) когда указано '-'.\n"
+"                              Дополнительные параметры out и dir можно\n"
+"                              указывать после каждой строки с URI. Эта "
+"необязательная\n"
+"                              строка должна начинаться с пустого места - "
+"пробела(ов). Смотрите секцию INPUT\n"
+"                              FILE страницы man (руководства пользователя) "
+"для детальных пояснений."
+
+#: src/usage_text.h:222
+msgid ""
+" -j, --max-concurrent-downloads=N Set maximum number of parallel downloads "
+"for\n"
+"                              every static (HTTP/FTP) URL, torrent and "
+"metalink.\n"
+"                              See also -s and -C options."
+msgstr ""
+" -j, --max-concurrent-downloads=N Установить максимальное количество "
+"параллельных загрузок для\n"
+"                              каждого статического (HTTP/FTP) URL, torrent и "
+"metalink.\n"
+"                              Смотрите также параметры -s и -C."
+
+#: src/usage_text.h:226
+msgid ""
+" --load-cookies=FILE          Load Cookies from FILE using the Firefox3 "
+"format\n"
+"                              and Mozilla/Firefox(1.x/2.x)/Netscape format."
+msgstr ""
+" --load-cookies=FILE Загружать куки-файлы из FILE, используя формат "
+"Firefox3\n"
+"                              и Mozilla/Firefox(1.x/2.x)/Netscape."
+
+#: src/usage_text.h:229
+msgid ""
+" --save-cookies=FILE          Save Cookies to FILE in Mozilla/Firefox(1.x/2."
+"x)/\n"
+"                              Netscape format. If FILE already exists, it "
+"is\n"
+"                              overwritten. Session Cookies are also saved "
+"and\n"
+"                              their expiry values are treated as 0."
+msgstr ""
+" --save-cookies=FILE Сохранить кукис в FILE в Mozilla/Firefox(1.x/2.x)/\n"
+"                              Netscape формате. Если FILE уже существует, он "
+"будет\n"
+"                              перезаписан. Сессия кукис также сохранится и\n"
+"                              значение ее окончания будет трактоваться как 0."
+
+#: src/usage_text.h:234
+msgid ""
+" -S, --show-files             Print file listing of .torrent or .metalink "
+"file\n"
+"                              and exit. More detailed information will be "
+"listed\n"
+"                              in case of torrent file."
+msgstr ""
+" -S, --show-files Вывести список из файла .torrent или из файла .metalink\n"
+"                              и выйти. Более детальная информация будет "
+"выведена\n"
+"                              для файла торанта."
+
+#: src/usage_text.h:238
+msgid ""
+" --select-file=INDEX...       Set file to download by specifying its index.\n"
+"                              You can find the file index using the\n"
+"                              --show-files option. Multiple indexes can be\n"
+"                              specified by using ',', for example: \"3,6\".\n"
+"                              You can also use '-' to specify a range: "
+"\"1-5\".\n"
+"                              ',' and '-' can be used together.\n"
+"                              When used with the -M option, index may vary\n"
+"                              depending on the query(see --metalink-* "
+"options)."
+msgstr ""
+" --select-file=INDEX... Указать файл для загрузки по заданному индексу.\n"
+"                              Вы можете найти индекс файла, используя "
+"параметр\n"
+"                              --show-files. Составной индекс можно\n"
+"                              указать, используя ',', например: \"3,6\".\n"
+"                              Вы можете также использовать '-', чтобы "
+"указать диапазон: \"1-5\".\n"
+"                              ',' и '-' могут быть использованы вместе.\n"
+"                              Когда используется с параметром -M, индекс "
+"может сильно\n"
+"                              зависеть от запроса (смотрите параметры --"
+"metalink-*)."
+
+#: src/usage_text.h:247
+msgid " -T, --torrent-file=TORRENT_FILE  The path to the .torrent file."
+msgstr " -T, --torrent-file=TORRENT_FILE  Путь к .torrent-файлу."
+
+#: src/usage_text.h:249
+msgid ""
+" --follow-torrent=true|false|mem If true or mem is specified, when a file\n"
+"                              whose suffix is .torrent or content type is\n"
+"                              application/x-bittorrent is downloaded, aria2\n"
+"                              parses it as a torrent file and downloads "
+"files\n"
+"                              mentioned in it.\n"
+"                              If mem is specified, a torrent file is not\n"
+"                              written to the disk, but is just kept in "
+"memory.\n"
+"                              If false is specified, the action mentioned "
+"above\n"
+"                              is not taken."
+msgstr ""
+" --follow-torrent=true|false|mem Если указать true или mem, тогда "
+"загруженный файл,\n"
+"                              суффикс которого - .torrent или тип -\n"
+"                              application/x-bittorrent, aria2\n"
+"                              анализирует как torrent-файл и загружает "
+"файлы\n"
+"                              упомянутые в нем.\n"
+"                              Если указано mem, тогда torrent-файл не\n"
+"                              записывается на диск, а содержится в памяти.\n"
+"                              Если указано false, действия, упомянутые выше\n"
+"                              не совершаются."
+
+#: src/usage_text.h:259
+msgid ""
+" --direct-file-mapping=true|false Directly read from and write to each file\n"
+"                              mentioned in .torrent file."
+msgstr ""
+" --direct-file-mapping=true|false Напрямую считывать из и записывать в "
+"каждый файл,\n"
+"                              упомянутый в .torrent файле."
+
+#: src/usage_text.h:262
+msgid ""
+" --listen-port=PORT...        Set TCP port number for BitTorrent downloads.\n"
+"                              Multiple ports can be specified by using ',',\n"
+"                              for example: \"6881,6885\". You can also use "
+"'-'\n"
+"                              to specify a range: \"6881-6999\". ',' and '-' "
+"can\n"
+"                              be used together."
+msgstr ""
+" --listen-port=PORT... Назначить номер порта TCP для BitTorrent загрузок.\n"
+"                              Несколько портов можно указать используя ',',\n"
+"                              например: \"6881,6885\". Вы также можете "
+"использовать '-',\n"
+"                              чтоб указать диапазон: \"6881-6999\". ',' и "
+"'-' могут\n"
+"                              быть использованы вместе."
+
+#: src/usage_text.h:268
+msgid ""
+" --max-overall-upload-limit=SPEED Set max overall upload speed in bytes/"
+"sec.\n"
+"                              0 means unrestricted.\n"
+"                              You can append K or M(1K = 1024, 1M = 1024K).\n"
+"                              To limit the upload speed per torrent, use\n"
+"                              --max-upload-limit option."
+msgstr ""
+" --max-overall-upload-limit=SPEED Установить максимальную общую скорость "
+"раздачи в байтах/сек.\n"
+"                              0 значит не ограничена.\n"
+"                              Вы можете добавить K или M(1K = 1024, 1M = "
+"1024K).\n"
+"                              Чтобы ограничить скорость раздачи для узла "
+"торента, используйте\n"
+"                              параметр --max-upload-limit."
+
+#: src/usage_text.h:274
+msgid ""
+" -u, --max-upload-limit=SPEED Set max upload speed per each torrent in\n"
+"                              bytes/sec. 0 means unrestricted.\n"
+"                              You can append K or M(1K = 1024, 1M = 1024K).\n"
+"                              To limit the overall upload speed, use\n"
+"                              --max-overall-upload-limit option."
+msgstr ""
+" -u, --max-upload-limit=SPEED Указать максимальную скорость отдачи узла "
+"каждого торента в\n"
+"                              байтах в секунду. 0 значит неограниченно\n"
+"                              Вы можете добавить K или M(1K = 1024, 1M = "
+"1024K).\n"
+"                              Чтобы ограничить общую скорость отдачи, "
+"используйте\n"
+"                              параметр --max-overall-upload-limit."
+
+#: src/usage_text.h:280
+msgid ""
+" --seed-time=MINUTES          Specify seeding time in minutes. Also see the\n"
+"                              --seed-ratio option."
+msgstr ""
+" --seed-time=MINUTES Задать время сидирования (раздачи) в минутах. Смотрите "
+"также\n"
+"                              параметр --seed-ratio."
+
+#: src/usage_text.h:283
+msgid ""
+" --seed-ratio=RATIO           Specify share ratio. Seed completed torrents\n"
+"                              until share ratio reaches RATIO.\n"
+"                              You are strongly encouraged to specify equals "
+"or\n"
+"                              more than 1.0 here. Specify 0.0 if you intend "
+"to\n"
+"                              do seeding regardless of share ratio.\n"
+"                              If --seed-time option is specified along with\n"
+"                              this option, seeding ends when at least one "
+"of\n"
+"                              the conditions is satisfied."
+msgstr ""
+" --seed-ratio=RATIO Указать рейтинг раздачи. Сидировать завершенные "
+"торенты,\n"
+"                              пока рейтинг раздачи не станет больше RATIO.\n"
+"                              Очень рекомендуется указать тут равный или\n"
+"                              больший 1.0. Укажите 0.0, если Вы собираетесь\n"
+"                              сидировать невзирая на рейтинг раздачи.\n"
+"                              Если указан параметр --seed-time вместе с \n"
+"                              этим параметром, сидирование закончится тогда, "
+"когда хотя бы одно\n"
+"                              условие будет удовлетворено."
+
+#: src/usage_text.h:292
+msgid ""
+" --peer-id-prefix=PEER_ID_PREFIX Specify the prefix of peer ID. The peer ID "
+"in\n"
+"                              BitTorrent is 20 byte length. If more than 20\n"
+"                              bytes are specified, only first 20 bytes are\n"
+"                              used. If less than 20 bytes are specified, "
+"random\n"
+"                              byte data are added to make its length 20 "
+"bytes."
+msgstr ""
+" --peer-id-prefix=PEER_ID_PREFIX Задать префикс для ID узла. ID узла в "
+"BitTorrent\n"
+"                              имеет размер 20 байт. Если более 20 байт будет "
+"указано,\n"
+"                              только первые 20 будут использоваться, если "
+"будет указано\n"
+"                              меньше 20, то они будут дополнены случайными "
+"данными до 20 байт."
+
+#: src/usage_text.h:298
+msgid " --enable-peer-exchange[=true|false] Enable Peer Exchange extension."
+msgstr ""
+" --enable-peer-exchange[=true|false] Разрешить расширение прямого обмена."
+
+#: src/usage_text.h:300
+msgid " --enable-dht[=true|false]    Enable DHT functionality."
+msgstr " --enable-dht[=true|false] Включить поддержку DHT."
+
+#: src/usage_text.h:302
+msgid ""
+" --dht-listen-port=PORT...    Set UDP listening port for DHT.\n"
+"                              Multiple ports can be specified by using ',',\n"
+"                              for example: \"6881,6885\". You can also use "
+"'-'\n"
+"                              to specify a range: \"6881-6999\". ',' and '-' "
+"can\n"
+"                              be used together."
+msgstr ""
+" --dht-listen-port=PORT... Указать порт прослушивания UDP для DHT.\n"
+"                              Несколько портов можно указать используя ',',\n"
+"                              например: \"6881,6885\". Вы также можете "
+"использовать '-',\n"
+"                              чтоб указать диапазон: \"6881-6999\". ',' и "
+"'-' могут\n"
+"                              быть использованы вместе."
+
+#: src/usage_text.h:308
+msgid ""
+" --dht-entry-point=HOST:PORT  Set host and port as an entry point to DHT\n"
+"                              network."
+msgstr ""
+" --dht-entry-point=HOST:PORT Установить хост и порт, как точку входа к DHT\n"
+"                              сети."
+
+#: src/usage_text.h:311
+msgid ""
+" --dht-file-path=PATH         Change the DHT routing table file to PATH."
+msgstr " --dht-file-path=PATH Заменить файл таблицы роутинга DHT на PATH."
+
+#: src/usage_text.h:313
+msgid ""
+" --bt-min-crypto-level=plain|arc4 Set minimum level of encryption method.\n"
+"                              If several encryption methods are provided by "
+"a\n"
+"                              peer, aria2 chooses the lowest one which "
+"satisfies\n"
+"                              the given level."
+msgstr ""
+" --bt-min-crypto-level=plain|arc4 Установить минимальный уровень метода "
+"шифрования.\n"
+"                              Если узел поддерживает несколько методов "
+"шифрования,\n"
+"                              aria2 выбирает наименьший, который "
+"удовлетворяет\n"
+"                              заданный уровень."
+
+#: src/usage_text.h:318
+msgid ""
+" --bt-require-crypto=true|false If true is given, aria2 doesn't accept and\n"
+"                              establish connection with legacy BitTorrent\n"
+"                              handshake. Thus aria2 always uses Obfuscation\n"
+"                              handshake."
+msgstr ""
+" --bt-require-crypto=true|false Если указано true, aria2 не принимает и не\n"
+"                              устанавливает соединение с наследованием "
+"начального обмена BitTorrent.\n"
+"                              Таким образом aria2 всегда использует "
+"обфускацию\n"
+"                              начального обмена."
+
+#: src/usage_text.h:323
+msgid ""
+" --bt-request-peer-speed-limit=SPEED If the whole download speed of every\n"
+"                              torrent is lower than SPEED, aria2 "
+"temporarily\n"
+"                              increases the number of peers to try for more\n"
+"                              download speed. Configuring this option with "
+"your\n"
+"                              preferred download speed can increase your\n"
+"                              download speed in some cases.\n"
+"                              You can append K or M(1K = 1024, 1M = 1024K)."
+msgstr ""
+" --bt-request-peer-speed-limit=SPEED Если вся скорость загрузки каждого\n"
+"                              торента ниже чем SPEED, aria2 временно\n"
+"                              увеличивает количество узлов, чтобы "
+"попробовать увеличить\n"
+"                              скорость загрузки. Настройка этого параметра с "
+"выбранной\n"
+"                              Вами скоростью загрузки может, в некоторых "
+"случаях,\n"
+"                              увеличить Вашу скорость загрузки.\n"
+"                              Вы можете добавить K или M(1K = 1024, 1M = "
+"1024K)."
+
+#: src/usage_text.h:331
+msgid ""
+" --bt-max-open-files=NUM      Specify maximum number of files to open in "
+"each\n"
+"                              BitTorrent download."
+msgstr ""
+" --bt-max-open-files=NUM Указать максимальное количество файлов для открытия "
+"в каждой\n"
+"                              BitTorrent загрузке."
+
+#: src/usage_text.h:334
+msgid ""
+" --bt-seed-unverified[=true|false] Seed previously downloaded files without\n"
+"                              verifying piece hashes."
+msgstr ""
+" --bt-seed-unverified[=true|false] Сидер первоначально загружает файлы\n"
+"                              без проверки хеша блока."
+
+#: src/usage_text.h:337
+msgid ""
+" --bt-max-peers=NUM           Specify the maximum number of peers per "
+"torrent.\n"
+"                              0 means unlimited.\n"
+"                              See also --bt-request-peer-speed-limit option."
+msgstr ""
+" --bt-max-peers=NUM Указать максимальное количество узлов каждого торента.\n"
+"                              0 означает неограниченно.\n"
+"                              Смотрите также параметр --bt-request-peer-"
+"speed-limit."
+
+#: src/usage_text.h:341
+msgid ""
+" -M, --metalink-file=METALINK_FILE The file path to the .metalink file. "
+"Reads\n"
+"                              input from stdin when '-' is specified."
+msgstr ""
+" -M, --metalink-file=METALINK_FILE Путь к файлу .metalink. Читает\n"
+"                              ввод из stdin, если в качестве имени файла "
+"указано '-'."
+
+#: src/usage_text.h:344
+msgid ""
+" -C, --metalink-servers=NUM_SERVERS The number of servers to connect to\n"
+"                              simultaneously. Some Metalinks regulate the\n"
+"                              number of servers to connect. aria2 strictly\n"
+"                              respects them. This means that if Metalink "
+"defines\n"
+"                              the maxconnections attribute lower than\n"
+"                              NUM_SERVERS, then aria2 uses the value of\n"
+"                              maxconnections attribute instead of "
+"NUM_SERVERS.\n"
+"                              See also -s and -j options."
+msgstr ""
+" -C, --metalink-servers=NUM_SERVERS Количество серверов для\n"
+"                              одновременного подключения. Некоторые Metalink "
+"регулируют\n"
+"                              количество серверов для соединения. aria2 "
+"точно\n"
+"                              придерживается их. Это значит, что если "
+"Metalink определяет\n"
+"                              атрибут maxconnections ниже чем\n"
+"                              NUM_SERVERS, тогда aria2 использует значение\n"
+"                              атрибута maxconnections вместо NUM_SERVERS.\n"
+"                              Смотрите также параметры -s и -j."
+
+#: src/usage_text.h:353
+msgid " --metalink-version=VERSION   The version of the file to download."
+msgstr " --metalink-version=VERSION   Версия файла для скачивания."
+
+#: src/usage_text.h:355
+msgid " --metalink-language=LANGUAGE The language of the file to download."
+msgstr " --metalink-language=LANGUAGE Язык файла для скачивания."
+
+#: src/usage_text.h:357
+msgid ""
+" --metalink-os=OS             The operating system of the file to download."
+msgstr " --metalink-os=OS             Целевая операционная система файла."
+
+#: src/usage_text.h:359
+msgid ""
+" --metalink-location=LOCATION[,...] The location of the preferred server.\n"
+"                              A comma-delimited list of locations is\n"
+"                              acceptable."
+msgstr ""
+" --metalink-location=LOCATION[,...] Местонахождение предпочитаемого "
+"сервера.\n"
+"                              Перечень с запятыми разделителями есть\n"
+"                              приемлемым."
+
+#: src/usage_text.h:363
+msgid ""
+" --metalink-preferred-protocol=PROTO Specify preferred protocol. Specify "
+"'none'\n"
+"                              if you don't have any preferred protocol."
+msgstr ""
+" --metalink-preferred-protocol=PROTO Указать предпочитаемый протокол. "
+"Укажите 'none',\n"
+"                              если у Вас нет желаемого протокола."
+
+#: src/usage_text.h:366
+msgid ""
+" --follow-metalink=true|false|mem If true or mem is specified, when a file\n"
+"                              whose suffix is .metalink or content type of\n"
+"                              application/metalink+xml is downloaded, aria2\n"
+"                              parses it as a metalink file and downloads "
+"files\n"
+"                              mentioned in it.\n"
+"                              If mem is specified, a metalink file is not\n"
+"                              written to the disk, but is just kept in "
+"memory.\n"
+"                              If false is specified, the action mentioned "
+"above\n"
+"                              is not taken."
+msgstr ""
+" --follow-metalink=true|false|mem Если указано 'true' или 'mem' , когда "
+"загруженный файл\n"
+"                              имеет расширение .metalink или mime-тип \n"
+"                              application/metalink+xml, aria2 считает \n"
+"                              его файлом metalink и загружает описанные\n"
+"                              в нем файлы.\n"
+"                              Если указано 'mem', то metalink-файл не "
+"сохраняется \n"
+"                              на диск, а просто хранится в памяти.\n"
+"                              Если указано 'false' то вышеприведенная "
+"операция \n"
+"                              не производится."
+
+#: src/usage_text.h:376
+msgid ""
+" --metalink-enable-unique-protocol=true|false If true is given and several\n"
+"                              protocols are available for a mirror in a "
+"metalink\n"
+"                              file, aria2 uses one of them.\n"
+"                              Use --metalink-preferred-protocol option to\n"
+"                              specify the preference of protocol."
+msgstr ""
+" --metalink-enable-unique-protocol=true|false Если задано true и несколько\n"
+"                              протоколов доступны для зеркал в файле "
+"metalink,\n"
+"                              aria2 использует один из них.\n"
+"                              Используйте параметр --metalink-preferred-"
+"protocol, чтобы\n"
+"                              указать предпочитаемый протокол."
+
+#: src/usage_text.h:382
+msgid " -v, --version                Print the version number and exit."
+msgstr " -v, --version                Вывести номер версии и выйти."
+
+#: src/usage_text.h:384
+msgid ""
+" -h, --help[=TAG|KEYWORD]     Print usage and exit.\n"
+"                              The help messages are classified with tags. A "
+"tag\n"
+"                              starts with \"#\". For example, type \"--"
+"help=#http\"\n"
+"                              to get the usage for the options tagged with\n"
+"                              \"#http\". If non-tag word is given, print the "
+"usage\n"
+"                              for the options whose name includes that word."
+msgstr ""
+" -h, --help[=TAG|KEYWORD] Вывести справку по использованию и выйти.\n"
+"                              Справочное сообщение определяется метками "
+"(TAG).\n"
+"                              Метки начинаются с \"#\". Например, \"--"
+"help=#http\"\n"
+"                              выведет справку по опциям, помеченным меткой "
+"\"#http\". \n"
+"                              Если задать слово, не являющееся меткой, то "
+"будет \n"
+"                              выведена справка по опциям, содержащим это "
+"слово."
+
+#: src/usage_text.h:391
+msgid " --no-conf                    Disable loading aria2.conf file."
+msgstr " --no-conf Отменить загрузку файла aria2.conf."
+
+#: src/usage_text.h:393
+msgid ""
+" --conf-path=PATH             Change the configuration file path to PATH."
+msgstr " --conf-path=PATH Сменить путь к файлу конфигурации на PATH."
+
+#: src/usage_text.h:395
+msgid ""
+" --stop=SEC                   Stop application after SEC seconds has "
+"passed.\n"
+"                              If 0 is given, this feature is disabled."
+msgstr ""
+" --stop=SEC Остановить программу после того как пройдет SEC секунд.\n"
+"                              Если указан 0, эта возможность будет не "
+"доступна."
+
+#: src/usage_text.h:398
+msgid ""
+" --header=HEADER              Append HEADER to HTTP request header. You can "
+"use\n"
+"                              this option repeatedly to specify more than "
+"one\n"
+"                              header:\n"
+"                              aria2c --header=\"X-A: b78\" --header=\"X-B: "
+"9J1\"\n"
+"                              http://host/file"
+msgstr ""
+" --header=HEADER Добавляет HEADER к загаловку HTTP запроса. Вы можете "
+"использовать\n"
+"                              этот параметр повторно, чтоб указать более "
+"одного\n"
+"                              заголовка:\n"
+"                              aria2c --header=\"X-A: b78\" --header=\"X-B: "
+"9J1\"\n"
+"                              http://host/file"
+
+#: src/usage_text.h:404
+msgid " -q, --quiet[=true|false]     Make aria2 quiet(no console output)."
+msgstr ""
+" -q, --quiet[=true|false] Сделать aria2 молчаливым (без консольного вывода)."
+
+#: src/usage_text.h:406
+msgid " --async-dns[=true|false]     Enable asynchronous DNS."
+msgstr " --async-dns[=true|false] Разрешить асинхронный DNS."
+
+#: src/usage_text.h:408
+msgid " --ftp-reuse-connection[=true|false] Reuse connection in FTP."
+msgstr ""
+" --ftp-reuse-connection[=true|false] Повторно использовать FTP соединение."
+
+#: src/usage_text.h:410
+msgid ""
+" --summary-interval=SEC       Set interval to output download progress "
+"summary.\n"
+"                              Setting 0 suppresses the output."
+msgstr ""
+" --summary-interval=SEC Указать интервал времени до вывода сообщения про "
+"прогресс загрузки.\n"
+"                              Использование 0 запрещает вывод."
+
+#: src/usage_text.h:413
+msgid " --log-level=LEVEL            Set log level to output."
+msgstr " --log-level=LEVEL Указать уровень вывода лога."
+
+#: src/usage_text.h:415
+msgid ""
+" -R, --remote-time[=true|false] Retrieve timestamp of the remote file from "
+"the\n"
+"                              remote HTTP/FTP server and if it is "
+"available,\n"
+"                              apply it to the local file."
+msgstr ""
+" -R, --remote-time[=true|false] Ищет метку времени файла на\n"
+"                              удаленном HTTP/FTP сервере и, если это "
+"доступно,\n"
+"                              применяет ее к локальному файлу."
+
+#: src/usage_text.h:419
+msgid ""
+" --connect-timeout=SEC        Set the connect timeout in seconds to "
+"establish\n"
+"                              connection to HTTP/FTP/proxy server. After "
+"the\n"
+"                              connection is established, this option makes "
+"no\n"
+"                              effect and --timeout option is used instead."
+msgstr ""
+" --connect-timeout=SEC Указать перерыв в соединении для установки\n"
+"                              подключения к HTTP/FTP/прокси сервера. После\n"
+"                              установки подключения этот параметр не имеет "
+"значения,\n"
+"                              и вместо него используется параметр --timeout."
+
+#: src/usage_text.h:424
+msgid ""
+" --max-file-not-found=NUM     If aria2 receives `file not found' status from "
+"the\n"
+"                              remote HTTP/FTP servers NUM times without "
+"getting\n"
+"                              a single byte, then force the download to "
+"fail.\n"
+"                              Specify 0 to disable this option.\n"
+"                              This options is effective only when using\n"
+"                              HTTP/FTP servers."
+msgstr ""
+" --max-file-not-found=NUM Если aria2 получает статус `file not found' (файл "
+"не найден) с\n"
+"                              удаленных HTTP/FTP серверов NUM раз без "
+"получения\n"
+"                              хотя бы одного байта, тогда принудительно "
+"начинается отказ от загрузки.\n"
+"                              Укажите 0, чтоб запретить этот параметр.\n"
+"                              Этот параметр действенен только тогда, когда "
+"используются\n"
+"                              HTTP/FTP сервера."
+
+#: src/usage_text.h:431
+msgid ""
+" --uri-selector=SELECTOR      Specify URI selection algorithm.\n"
+"                              If 'inorder' is given, URI is tried in the "
+"order\n"
+"                              appeared in the URI list.\n"
+"                              If 'feedback' is given, aria2 uses download "
+"speed\n"
+"                              observed in the previous downloads and choose\n"
+"                              fastest server in the URI list. This also\n"
+"                              effectively skips dead mirrors. The observed\n"
+"                              download speed is a part of performance "
+"profile\n"
+"                              of servers mentioned in --server-stat-of and\n"
+"                              --server-stat-if options.\n"
+"                              If 'adaptive' is given, selects one of the "
+"best\n"
+"                              mirrors for the first and reserved "
+"connections.\n"
+"                              For supplementary ones, it returns mirrors "
+"which\n"
+"                              has not been tested yet, and if each of them "
+"has\n"
+"                              already been tested, returns mirrors which has "
+"to\n"
+"                              be tested again. Otherwise, it doesn't select\n"
+"                              anymore mirrors. Like 'feedback', it uses a\n"
+"                              performance profile of servers."
+msgstr ""
+" --uri-selector=SELECTOR Указать алгоритм выбора URI.\n"
+"                              Если задано 'inorder', то URI проверяются в "
+"порядке\n"
+"                              представления в списке URI.\n"
+"                              Если задано 'feedback', aria2 использует "
+"скорость загрузки,\n"
+"                              которая наблюдалась в предыдущих загрузках, и "
+"выбирает\n"
+"                              самый быстрый сервер в перечне URI. Это также\n"
+"                              эффективно исключает мертвые зеркала. "
+"Наблюдаемая\n"
+"                              скорость загрузки является частью настроек "
+"профиля\n"
+"                              сервера, упомянутых в параметрах --server-stat-"
+"of \n"
+"                              и --server-stat-if.\n"
+"                              Если задано 'adaptive', выбирается одно из "
+"лучших\n"
+"                              зеркал для первого и резервного соединений.\n"
+"                              Дополнительно, возвращаются зеркала, которые\n"
+"                              пока не были проверены, и, если каждое из них\n"
+"                              уже проверено, возвращаются зеркала, которые "
+"должны\n"
+"                              быть проверены снова. Иначе зеркала больше\n"
+"                              не выбираются. Подобно 'feedback', "
+"используются\n"
+"                              настройки профиля сервера."
+
+#: src/usage_text.h:450
+msgid ""
+" --server-stat-of=FILE        Specify the filename to which performance "
+"profile\n"
+"                              of the servers is saved. You can load saved "
+"data\n"
+"                              using --server-stat-if option."
+msgstr ""
+" --server-stat-of=FILE Задаёт имя файла в который сохраняется профиль\n"
+"                              настроек сервера. Вы можете загрузить "
+"сохраненные данные,\n"
+"                              используя параметр --server-stat-if."
+
+#: src/usage_text.h:454
+msgid ""
+" --server-stat-if=FILE        Specify the filename to load performance "
+"profile\n"
+"                              of the servers. The loaded data will be used "
+"in\n"
+"                              some URI selector such as 'feedback'.\n"
+"                              See also --uri-selector option"
+msgstr ""
+" --server-stat-if=FILE Указать имя файла для загрузки профиля настроек\n"
+"                              сервера. Загруженные данные будут использованы "
+"в\n"
+"                              некоторых URI селекторах, таких как "
+"'feedback'.\n"
+"                              Смотрите также параметр --uri-selector"
+
+#: src/usage_text.h:459
+msgid ""
+" --server-stat-timeout=SEC    Specifies timeout in seconds to invalidate\n"
+"                              performance profile of the servers since the "
+"last\n"
+"                              contact to them."
+msgstr ""
+" --server-stat-timeout=SEC Указывает паузу в секундах, для того, чтоб "
+"сделать недействительным\n"
+"                              профиль настроек сервера, с тех пор, как "
+"состоялся последний\n"
+"                              контакт с ним."
+
+#: src/usage_text.h:463
+msgid ""
+" --auto-save-interval=SEC     Save a control file(*.aria2) every SEC "
+"seconds.\n"
+"                              If 0 is given, a control file is not saved "
+"during\n"
+"                              download. aria2 saves a control file when it "
+"stops\n"
+"                              regardless of the value."
+msgstr ""
+" --auto-save-interval=SEC Сохранять контрольный файл (*.aria2) каждые SEC "
+"секунд.\n"
+"                              Если указано 0, тогда контрольный файл не "
+"сохраняется на протяжении\n"
+"                              загрузки. aria2 сохраняет контрольный файл "
+"тогда, когда останавливается,\n"
+"                              не смотря на значение."
+
+#: src/usage_text.h:468
+msgid ""
+" --certificate=FILE           Use the client certificate in FILE.\n"
+"                              The certificate must be in PEM format.\n"
+"                              You may use --private-key option to specify "
+"the\n"
+"                              private key."
+msgstr ""
+" --certificate=FILE Использовать клиентский сертификат в FILE.\n"
+"                              Сертификат должен быть в PEM формате.\n"
+"                              Вы можете использовать параметр --private-key, "
+"чтоб указать\n"
+"                              закрытый ключ."
+
+#: src/usage_text.h:473
+msgid ""
+" --private-key=FILE           Use the private key in FILE.\n"
+"                              The private key must be decrypted and in PEM\n"
+"                              format. See also --certificate option."
+msgstr ""
+" --private-key=FILE Использовать закрытый ключ в FILE.\n"
+"                              Закрытый ключ должен быть дешифрованным и в "
+"PEM\n"
+"                              формате. Смотрите также параметр --certificate."
+
+#: src/usage_text.h:477
+msgid ""
+" --ca-certificate=FILE        Use the certificate authorities in FILE to "
+"verify\n"
+"                              the peers. The certificate file must be in "
+"PEM\n"
+"                              format and can contain multiple CA "
+"certificates.\n"
+"                              Use --check-certificate option to enable\n"
+"                              verification."
+msgstr ""
+" --ca-certificate=FILE Использовать сертификат авторизации в FILE для "
+"проверки\n"
+"                              узлов. Сертификат должен быть в PEM\n"
+"                              формате и содержать многоразовые CA "
+"сертификаты.\n"
+"                              Используйте параметр --check-certificate, чтоб "
+"разрешить\n"
+"                              проверку."
+
+#: src/usage_text.h:483
+msgid ""
+" --check-certificate[=true|false] Verify the peer using certificates "
+"specified\n"
+"                              in --ca-certificate option."
+msgstr ""
+" --check-certificate[=true|false] Проверить каждый из используемых "
+"сертификатов, которые указаны\n"
+"                              в параметре --ca-certificate."
+
+#: src/usage_text.h:486
+msgid ""
+" --no-proxy=DOMAINS           Specify comma separated hostnames, domains or\n"
+"                              network address with or without CIDR block "
+"where\n"
+"                              proxy should not be used."
+msgstr ""
+
+#: src/usage_text.h:490
+msgid ""
+" --use-head[=true|false]      Use HEAD method for the first request to the "
+"HTTP\n"
+"                              server."
+msgstr ""
+" --use-head[=true|false] Использовать метод HEAD для первого запроса к HTTP\n"
+"                              серверу."
+
+#: src/usage_text.h:493
+msgid " --event-poll=POLL            Specify the method for polling events."
+msgstr " --event-poll=POLL Указать метод опроса событий."
+
+#: src/usage_text.h:495
+msgid ""
+" --xml-rpc-listen-port=PORT   Specify a port number for XML-RPC server to "
+"listen\n"
+"                              to."
+msgstr ""
+" --xml-rpc-listen-port=PORT Указать номер порта для прослушивания XML-RPC\n"
+"                              сервером."
+
+#: src/usage_text.h:498
+msgid ""
+" --enable-xml-rpc[=true|false] Enable XML-RPC server.\n"
+"                              It is strongly recommended to set username "
+"and\n"
+"                              password using --xml-rpc-user and --xml-rpc-"
+"passwd\n"
+"                              option. See also --xml-rpc-listen-port option."
+msgstr ""
+" --enable-xml-rpc[=true|false] Разоешить XML-RPC сервер.\n"
+"                              Настоятельно рекомендуется указать имя "
+"пользователя и\n"
+"                              пароль, используя параметры using --xml-rpc-"
+"user и\n"
+"                              --xml-rpc-passwd. Смотрите также параметр --"
+"xml-rpc-listen-port."
+
+#: src/usage_text.h:503
+msgid ""
+" --xml-rpc-max-request-size=SIZE Set max size of XML-RPC request. If aria2\n"
+"                              detects the request is more than SIZE bytes, "
+"it\n"
+"                              drops connection."
+msgstr ""
+" --xml-rpc-max-request-size=SIZE Установить максимальный размер XML-RPC "
+"запроса. Если aria2\n"
+"                              выявит запрос с розмером большим, чем SIZE "
+"байт, тогда\n"
+"                              соединение будет отменено."
+
+#: src/usage_text.h:507
+msgid " --xml-rpc-user=USER          Set XML-RPC user."
+msgstr " --xml-rpc-user=USER Указать XML-RPC пользователя."
+
+#: src/usage_text.h:509
+msgid " --xml-rpc-passwd=PASSWD      Set XML-RPC password."
+msgstr " --xml-rpc-passwd=PASSWD Указать XML-RPC пароль."
+
+#: src/usage_text.h:511
+msgid ""
+" --bt-external-ip=IPADDRESS   Specify the external IP address to report to "
+"a\n"
+"                              BitTorrent tracker. Although this function is\n"
+"                              named 'external', it can accept any kind of "
+"IP\n"
+"                              addresses."
+msgstr ""
+" --bt-external-ip=IPADDRESS Указать внешний IP для отчета для\n"
+"                              BitTorrent трекера. Не смотря на то, что эта "
+"функция\n"
+"                              названа 'external' ('внешней'), она может "
+"принимать любой IP\n"
+"                              адрес."
+
+#: src/usage_text.h:516
+msgid ""
+" --http-auth-challenge[=true|false] Send HTTP authorization header only when "
+"it\n"
+"                              is requested by the server. If false is set, "
+"then\n"
+"                              authorization header is always sent to the "
+"server.\n"
+"                              There is an exception: if username and "
+"password\n"
+"                              are embedded in URI, authorization header is\n"
+"                              always sent to the server regardless of this\n"
+"                              option."
+msgstr ""
+" --http-auth-challenge[=true|false] Отправлять заголовок HTTP авторизации "
+"только тогда, когда он\n"
+"                              запрошен с сервера. Если установлен false "
+"(\"нет\"), тогда\n"
+"                              заголовок авторизации всегда отправляется на "
+"сервер.\n"
+"                              Существует исключение: если имя пользователя и "
+"пароль\n"
+"                              являются встроенными в URI, то заголовок "
+"авторизации\n"
+"                              всегда отправляется на сервер, независимо от "
+"этого\n"
+"                              параметра."
+
+#: src/usage_text.h:524
+msgid ""
+" -O, --index-out=INDEX=PATH   Set file path for file with index=INDEX. You "
+"can\n"
+"                              find the file index using the --show-files "
+"option.\n"
+"                              PATH is a relative path to the path specified "
+"in\n"
+"                              --dir option. You can use this option "
+"multiple\n"
+"                              times."
+msgstr ""
+" -O, --index-out=INDEX=PATH Указать путь к файлу с индексом index=INDEX. Вы "
+"можете\n"
+"                              найти индекс файла используя параметр --show-"
+"files.\n"
+"                              PATH является относительным путем к тому, "
+"который указано в\n"
+"                              параметре --dir. Вы можете использовать этот "
+"параметр много\n"
+"                              раз."
+
+#: src/usage_text.h:530
+msgid ""
+" --dry-run[=true|false]       If true is given, aria2 just checks whether "
+"the\n"
+"                              remote file is available and doesn't download\n"
+"                              data. This option has effect on HTTP/FTP "
+"download.\n"
+"                              BitTorrent downloads are canceled if true is\n"
+"                              specified."
+msgstr ""
+" --dry-run[=true|false] Если задано true (да), aria2 только проверяет, "
+"является ли\n"
+"                              дистанционный файл доступным и не загружает\n"
+"                              данные. Этот параметр влияет на HTTP/FTP "
+"загрузку.\n"
+"                              BitTorrent загрузки отменяются, если true\n"
+"                              задано."
+
+#: src/usage_text.h:536
+msgid ""
+" --bt-tracker-interval=SEC    Set the interval in seconds between tracker\n"
+"                              requests. This completely overrides interval "
+"value\n"
+"                              and aria2 just uses this value and ignores "
+"the\n"
+"                              min interval and interval value in the "
+"response of\n"
+"                              tracker. If 0 is set, aria2 determines "
+"interval\n"
+"                              based on the response of tracker and the "
+"download\n"
+"                              progress."
+msgstr ""
+" --bt-tracker-interval=SEC Указать интервал в секундах между запросами\n"
+"                              трекера. Это полностью отбрасывает значение "
+"интервала\n"
+"                              и aria2 использует только это значение и "
+"игнорирует\n"
+"                              минимальный интервал и значение интервала в "
+"ответе\n"
+"                              трекера. Если указан 0, aria2 определяет "
+"интервал\n"
+"                              основываясь на ответе трекера и прогрессе\n"
+"                              загрузки."
+
+#: src/usage_text.h:544
+msgid ""
+" --on-download-complete=COMMAND Set the command to be executed when "
+"download\n"
+"                              completes.\n"
+"                              See --on-download-start option for the\n"
+"                              requirement of COMMAND.\n"
+"                              See also --on-download-stop option."
+msgstr ""
+" --on-download-complete=COMMAND Указать команду, которая будет выполнена "
+"тогда, когда загрузка\n"
+"                              завершится.\n"
+"                              Смотрите параметр --on-download-start, чтоб\n"
+"                              прояснить требования к COMMAND.\n"
+"                              Смотрите также параметр --on-download-stop."
+
+#: src/usage_text.h:550
+msgid ""
+" --on-download-start=COMMAND  Set the command to be executed when download\n"
+"                              starts up. COMMAND must take just one argument "
+"and\n"
+"                              GID is passed to COMMAND as a first argument."
+msgstr ""
+" --on-download-start=COMMAND Указать команду, которую будет выполнено тогда, "
+"когда начнется\n"
+"                              загрузка. COMMAND должна содержать только один "
+"аргумент и\n"
+"                              GID добавляется к COMMAND как первый аргумент."
+
+#: src/usage_text.h:554
+msgid ""
+" --on-download-pause=COMMAND  Set the command to be executed when download\n"
+"                              is paused.\n"
+"                              See --on-download-start option for the\n"
+"                              requirement of COMMAND."
+msgstr ""
+
+#: src/usage_text.h:559
+msgid ""
+" --on-download-error=COMMAND  Set the command to be executed when download\n"
+"                              aborts due to error.\n"
+"                              See --on-download-start option for the\n"
+"                              requirement of COMMAND.\n"
+"                              See also --on-download-stop option."
+msgstr ""
+" --on-download-error=COMMAND Указать команду, которая будет выполнена тогда, "
+"когда загрузка\n"
+"                              будет прервана из-за ошибки.\n"
+"                              Смотрите параметр --on-download-start, чтоб\n"
+"                              прояснить требования к COMMAND.\n"
+"                              Смотрите также параметр --on-download-stop.."
+
+#: src/usage_text.h:565
+msgid ""
+" --on-download-stop=COMMAND   Set the command to be executed when download\n"
+"                              stops. You can override the command to be "
+"executed\n"
+"                              for particular download result using\n"
+"                              --on-download-complete and --on-download-"
+"error. If\n"
+"                              they are specified, command specified in this\n"
+"                              option is not executed.\n"
+"                              See --on-download-start option for the\n"
+"                              requirement of COMMAND."
+msgstr ""
+" --on-download-stop=COMMAND Указать команду, которая будет выполняться при "
+"остановке загрузки.\n"
+"                              Вы можете переопределить команду для "
+"конкретных причин остановки\n"
+"                              используя опции --on-download-complete (по "
+"завершении загрузки) и --on-download-error\n"
+"                              (остановка по ошибке). Если эти опции заданы, "
+"то команда, указанная в этой опции,\n"
+"                              не выполняется.\n"
+"                              Смотрите справку по опции --on-download-start, "
+"чтобы узнать требования\n"
+"                              к команде COMMAND"
+
+#: src/usage_text.h:574
+msgid ""
+" --bt-stop-timeout=SEC        Stop BitTorrent download if download speed is "
+"0 in\n"
+"                              consecutive SEC seconds. If 0 is given, this\n"
+"                              feature is disabled."
+msgstr ""
+" --bt-stop-timeout=SEC Остановить закачку BitTorrent'а, если скорость "
+"загрузки равна 0\n"
+"                              на протяжении SEC секунд. Если задать 0, то "
+"эта возможность \n"
+"                              не будет использоваться."
+
+#: src/usage_text.h:578
+msgid ""
+" --xml-rpc-listen-all[=true|false] Listen incoming XML-RPC requests on all\n"
+"                              network interfaces. If false is given, listen "
+"only\n"
+"                              on local loopback interface."
+msgstr ""
+" --xml-rpc-listen-all[=true|false] Ожидать входящие XML-RPC запросы на всех\n"
+"                              сетевых интерфейсах. Если указано false, "
+"слушать только на\n"
+"                              локальном петлевом интерфейсе (loopback)."
+
+#: src/usage_text.h:582
+msgid ""
+" --bt-prioritize-piece=head[=SIZE],tail[=SIZE] Try to download first and "
+"last\n"
+"                              pieces of each file first. This is useful for\n"
+"                              previewing files. The argument can contain 2\n"
+"                              keywords:head and tail. To include both "
+"keywords,\n"
+"                              they must be separated by comma. These "
+"keywords\n"
+"                              can take one parameter, SIZE. For example, if\n"
+"                              head=SIZE is specified, pieces in the range "
+"of\n"
+"                              first SIZE bytes of each file get higher "
+"priority.\n"
+"                              tail=SIZE means the range of last SIZE bytes "
+"of\n"
+"                              each file. SIZE can include K or M(1K = 1024, "
+"1M =\n"
+"                              1024K). If SIZE is omitted, SIZE=1M is used."
+msgstr ""
+" --bt-prioritize-piece=head[=SIZE],tail[=SIZE] Пытаться загрузить сначала\n"
+"                              первую и последнюю части каждого файла.\n"
+"                              Это бывает полезным для предварительного\n"
+"                              просмотра файлов. Аргумент может содержать\n"
+"                              2 ключевых слова: head и tail. Для включения\n"
+"                              обоих ключей, необходимо разделить их "
+"запятой.\n"
+"                              Ключевые слова принимают один параметр: SIZE.\n"
+"                              К примеру, если указано head=SIZE, части в "
+"пределах\n"
+"                              первых SIZE байт каждого файла получат "
+"повышенный\n"
+"                              приоритет. tail=SIZE обозначает диапазон из\n"
+"                              последних SIZE байт каждого файла. SIZE может\n"
+"                              включать букву K или M для обозначения "
+"размера\n"
+"                              в килобайтах или мегабайтах, соответственно\n"
+"                              (1K = 1024, 1M = 1024K). Если SIZE пропущено, "
+"то\n"
+"                              будет использовано по умолчанию значение: "
+"SIZE=1M."
+
+#: src/usage_text.h:594
+msgid ""
+" --interface=INTERFACE        Bind sockets to given interface. You can "
+"specify\n"
+"                              interface name, IP address and hostname."
+msgstr ""
+" --interface=INTERFACE        Привязать сокеты к данному интерфейсу. Вы "
+"можете указать\n"
+"                              имя интерфейса, IP-адрес и имя хоста."
+
+#: src/usage_text.h:597
+msgid " --disable-ipv6[=true|false]  Disable IPv6."
+msgstr " --disable-ipv6[=true|false]  Отключить IPv6."
+
+#: src/usage_text.h:599
+msgid ""
+" --bt-save-metadata[=true|false] Save metadata as .torrent file. This option "
+"has\n"
+"                              effect only when BitTorrent Magnet URI is "
+"used.\n"
+"                              The filename is hex encoded info hash with "
+"suffix\n"
+"                              .torrent. The directory to be saved is the "
+"same\n"
+"                              directory where download file is saved. If "
+"the\n"
+"                              same file already exists, metadata is not "
+"saved.\n"
+"                              See also --bt-metadata-only option."
+msgstr ""
+
+#: src/usage_text.h:607
+msgid ""
+" --http-no-cache[=true|false] Send Cache-Control: no-cache and Pragma: no-"
+"cache\n"
+"                              header to avoid cached content.  If false is\n"
+"                              given, these headers are not sent and you can "
+"add\n"
+"                              Cache-Control header with a directive you "
+"like\n"
+"                              using --header option."
+msgstr ""
+
+#: src/usage_text.h:613
+msgid ""
+" --bt-metadata-only[=true|false] Download metadata only. The file(s) "
+"described\n"
+"                              in metadata will not be downloaded. This "
+"option\n"
+"                              has effect only when BitTorrent Magnet URI is\n"
+"                              used. See also --bt-save-metadata option."
+msgstr ""
+
+#: src/usage_text.h:618
+msgid ""
+" --human-readable[=true|false] Print sizes and speed in human readable "
+"format\n"
+"                              (e.g., 1.2Ki, 3.4Mi) in the console readout."
+msgstr ""
+
+#: src/usage_text.h:621
+msgid " --bt-enable-lpd[=true|false] Enable Local Peer Discovery."
+msgstr " --bt-enable-lpd[=true|false] Разрешить поиск локальных пиров."
+
+#: src/usage_text.h:623
+msgid ""
+" --bt-lpd-interface=INTERFACE Use given interface for Local Peer Discovery. "
+"If\n"
+"                              this option is not specified, the default\n"
+"                              interface is chosen. You can specify "
+"interface\n"
+"                              name and IP address."
+msgstr ""
+" --bt-lpd-interface=INTERFACE Использовать для поиска локальных пиров "
+"указанный интерфейс.\n"
+"                              Если этот параметр не указан, используется "
+"интерфейс по умолчанию.\n"
+"                              Можно указать имя интерфейса и IP-адрес."
+
+#: src/usage_text.h:628
+msgid ""
+" --reuse-uri[=true|false]     Reuse already used URIs if no unused URIs are\n"
+"                              left."
+msgstr ""
+
+#: src/usage_text.h:631
+msgid " --all-proxy-user=USER        Set user for --all-proxy option."
+msgstr ""
+" --all-proxy-user=USER Указать имя пользователя для параметра --all-proxy."
+
+#: src/usage_text.h:633
+msgid " --all-proxy-passwd=PASSWD    Set password for --all-proxy option."
+msgstr " --all-proxy-passwd=PASSWD Указать пароль для параметра --all-proxy."
+
+#: src/usage_text.h:635
+msgid " --http-proxy-user=USER       Set user for --http-proxy option."
+msgstr ""
+" --http-proxy-user=USER Указать имя пользователя для параметра --http-proxy."
+
+#: src/usage_text.h:637
+msgid " --http-proxy-passwd=PASSWD   Set password for --http-proxy option."
+msgstr " --http-proxy-passwd=PASSWD Указать пароль для параметра --http-proxy."
+
+#: src/usage_text.h:639
+msgid " --https-proxy-user=USER      Set user for --https-proxy option."
+msgstr ""
+" --https-proxy-user=USER Указать имя пользователя для параметра --https-"
+"proxy."
+
+#: src/usage_text.h:641
+msgid " --https-proxy-passwd=PASSWD  Set password for --https-proxy option."
+msgstr ""
+" --https-proxy-passwd=PASSWD Указать пароль для параметра --https-proxy."
+
+#: src/usage_text.h:643
+msgid " --ftp-proxy-user=USER        Set user for --ftp-proxy option."
+msgstr ""
+" --ftp-proxy-user=USER Указать имя пользователя для параметра --ftp-proxy."
+
+#: src/usage_text.h:645
+msgid " --ftp-proxy-passwd=PASSWD    Set password for --ftp-proxy option."
+msgstr " --ftp-proxy-passwd=PASSWD Указать пароль для параметра --ftp-proxy."
+
+#: src/usage_text.h:647
+msgid ""
+" --remove-control-file[=true|false] Remove control file before download. "
+"Using\n"
+"                              with --allow-overwrite=true, download always\n"
+"                              starts from scratch. This will be useful for\n"
+"                              users behind proxy server which disables "
+"resume."
+msgstr ""
+" --remove-control-file[=true|false] Удалить контрольный файл перед "
+"загрузкой.\n"
+"                              При использовании с --allow-overwrite=true "
+"файл всегда\n"
+"                              загружается заново. Это может понадобиться "
+"пользователям\n"
+"                              за прокси-сервером, не поддерживающим докачку."
+
+#: src/usage_text.h:652
+msgid ""
+" --always-resume[=true|false] Always resume download. If true is given, "
+"aria2\n"
+"                              always tries to resume download and if resume "
+"is\n"
+"                              not possible, aborts download. If false is "
+"given,\n"
+"                              when all given URIs do not support resume or\n"
+"                              aria2 encounters N URIs which does not "
+"support\n"
+"                              resume (N is the value specified using\n"
+"                              --max-resume-failure-tries option), aria2\n"
+"                              downloads file from scratch.\n"
+"                              See --max-resume-failure-tries option."
+msgstr ""
+
+#: src/usage_text.h:662
+msgid ""
+" --max-resume-failure-tries=N When used with --always-resume=false, aria2\n"
+"                              downloads file from scratch when aria2 detects "
+"N\n"
+"                              number of URIs that does not support resume. "
+"If N\n"
+"                              is 0, aria2 downloads file from scratch when "
+"all\n"
+"                              given URIs do not support resume.\n"
+"                              See --always-resume option."
+msgstr ""
+
+#: src/usage_text.h:669
+msgid " --bt-tracker-timeout=SEC     Set timeout in seconds."
+msgstr " --bt-tracker-timeout=SEC     Указать ожидание в секундах."
+
+#: src/usage_text.h:671
+msgid ""
+" --bt-tracker-connect-timeout=SEC Set the connect timeout in seconds to\n"
+"                              establish connection to tracker. After the\n"
+"                              connection is established, this option makes "
+"no\n"
+"                              effect and --bt-tracker-timeout option is "
+"used\n"
+"                              instead."
+msgstr ""
+
+#: src/usage_text.h:677
+msgid " --dht-message-timeout=SEC    Set timeout in seconds."
+msgstr " --dht-message-timeout=SEC    Указать ожидание в секундах.."
+
+#: src/usage_text.h:679
+msgid ""
+" --http-accept-gzip[=true|false] Send 'Accept: deflate, gzip' request "
+"header\n"
+"                              and inflate response if remote server "
+"responds\n"
+"                              with 'Content-Encoding: gzip' or\n"
+"                              'Content-Encoding: deflate'."
+msgstr ""
+
+#: src/usage_text.h:684
+msgid ""
+" --save-session=FILE          Save error/unfinished downloads to FILE on "
+"exit.\n"
+"                              You can pass this output file to aria2c with -"
+"i\n"
+"                              option on restart. Please note that downloads\n"
+"                              added by aria2.addTorrent and aria2."
+"addMetalink\n"
+"                              XML-RPC method are not saved."
+msgstr ""
+
+#: src/usage_text.h:690
+#, fuzzy
+msgid ""
+" --max-connection-per-server=NUM The maximum number of connections to one "
+"server\n"
+"                              for each download."
+msgstr ""
+" --bt-max-open-files=NUM Указать максимальное количество файлов для открытия "
+"в каждой\n"
+"                              BitTorrent загрузке."
+
+#: src/usage_text.h:693
+#, fuzzy
+msgid ""
+" --min-split-size=SIZE        aria2 does not split less than 2*SIZE byte "
+"range.\n"
+"                              For example, let's consider downloading 20MiB\n"
+"                              file. If SIZE is 10M, aria2 can split file "
+"into 2\n"
+"                              range [0-10MiB) and [10MiB-20MiB) and download "
+"it\n"
+"                              using 2 sources(if --split >= 2, of course).\n"
+"                              If SIZE is 15M, since 2*15M > 20MiB, aria2 "
+"does\n"
+"                              not split file and download it using 1 "
+"source.\n"
+"                              You can append K or M(1K = 1024, 1M = 1024K)."
+msgstr ""
+" --bt-request-peer-speed-limit=SPEED Если вся скорость загрузки каждого\n"
+"                              торента ниже чем SPEED, aria2 временно\n"
+"                              увеличивает количество узлов, чтобы "
+"попробовать увеличить\n"
+"                              скорость загрузки. Настройка этого параметра с "
+"выбранной\n"
+"                              Вами скоростью загрузки может, в некоторых "
+"случаях,\n"
+"                              увеличить Вашу скорость загрузки.\n"
+"                              Вы можете добавить K или M(1K = 1024, 1M = "
+"1024K)."
+
+#: src/usage_text.h:702
+#, fuzzy
+msgid ""
+" --conditional-get[=true|false] Download file only when the local file is "
+"older\n"
+"                              than remote file. Currently, this function "
+"has\n"
+"                              many limitations. See man page for details."
+msgstr ""
+" -R, --remote-time[=true|false] Ищет метку времени файла на\n"
+"                              удаленном HTTP/FTP сервере и, если это "
+"доступно,\n"
+"                              применяет ее к локальному файлу."
+
+#: src/usage_text.h:706
+#, fuzzy
+msgid ""
+" --on-bt-download-complete=COMMAND For BitTorrent, a command specified in\n"
+"                              --on-download-complete is called when "
+"download\n"
+"                              completes and seeding is over. On the other "
+"hand,\n"
+"                              this option sets the command to be executed "
+"when\n"
+"                              download completes but before seeding.\n"
+"                              See --on-download-start option for the\n"
+"                              requirement of COMMAND."
+msgstr ""
+" --on-download-stop=COMMAND Указать команду, которая будет выполняться при "
+"остановке загрузки.\n"
+"                              Вы можете переопределить команду для "
+"конкретных причин остановки\n"
+"                              используя опции --on-download-complete (по "
+"завершении загрузки) и --on-download-error\n"
+"                              (остановка по ошибке). Если эти опции заданы, "
+"то команда, указанная в этой опции,\n"
+"                              не выполняется.\n"
+"                              Смотрите справку по опции --on-download-start, "
+"чтобы узнать требования\n"
+"                              к команде COMMAND"
+
+#: src/version_usage.cc:57
+msgid " version "
+msgstr " версия "
+
+#: src/version_usage.cc:80
+#, c-format
+msgid "Report bugs to %s"
+msgstr "Сообщения об ошибках направляйте на адрес %s"
+
+#: src/version_usage.cc:85
+msgid ""
+"Usage: aria2c [OPTIONS] [URI | MAGNET | TORRENT_FILE | METALINK_FILE]..."
+msgstr ""
+"Использование: aria2c [OPTIONS] [URI | MAGNET | TORRENT_FILE | "
+"METALINK_FILE]..."
+
+#: src/version_usage.cc:92
+msgid "Printing all options."
+msgstr "Вывод всех опций"
+
+#: src/version_usage.cc:94
+#, c-format
+msgid "Printing options tagged with '%s'."
+msgstr "Вывод опций с меткой '%s'."
+
+#: src/version_usage.cc:98
+#, c-format
+msgid "See -h option to know other command-line options(%s)."
+msgstr "Для других опций командной строки(%s) посмотрите опцию '-h'."
+
+#: src/version_usage.cc:103 src/version_usage.cc:115
+msgid "Options:"
+msgstr "Параметры:"
+
+#: src/version_usage.cc:112
+#, c-format
+msgid "Printing options whose name includes '%s'."
+msgstr "Вывод опций, имя которых содержит '%s'."
+
+#: src/version_usage.cc:120
+#, c-format
+msgid "No option matching with '%s'."
+msgstr "Нет подходящей опции к '%s'."
+
+#: src/version_usage.cc:128
+msgid ""
+" You can specify multiple HTTP(S)/FTP URIs. Unless you specify -Z option, "
+"all\n"
+" URIs must point to the same file or downloading will fail."
+msgstr ""
+" Вы можете указать несколько URI для HTTP(S)/FTP. Если опция -Z не "
+"обозначена, все\n"
+" URI должны указывать на один и тот же файл, в ином случае загрузка "
+"завершится неудачей."
+
+#: src/version_usage.cc:130
+msgid ""
+" You can also specify arbitrary number of BitTorrent Magnet URIs, torrent/\n"
+" metalink files stored in a local drive. Please note that they are always\n"
+" treated as a separate download."
+msgstr ""
+" Также вы можете указать произвольное количество BitTorrent Magnet URI, "
+"файлов torrent/metalink, хранящихся на диске. Учитывайте, что они всегда "
+"рассматриваются как отдельные загрузки."
+
+#: src/version_usage.cc:135
+msgid ""
+" You can specify both torrent file with -T option and URIs. By doing this,\n"
+" download a file from both torrent swarm and HTTP/FTP server at the same "
+"time,\n"
+" while the data from HTTP/FTP are uploaded to the torrent swarm. For single "
+"file\n"
+" torrents, URI can be a complete URI pointing to the resource or if URI "
+"ends\n"
+" with '/', 'name' in torrent file is added. For multi-file torrents, 'name' "
+"and\n"
+" 'path' in torrent are added to form a URI for each file."
+msgstr ""
+
+#: src/version_usage.cc:142
+msgid ""
+" Make sure that URI is quoted with single(') or double(\") quotation if it\n"
+" contains \"&\" or any characters that have special meaning in shell."
+msgstr ""
+" Убедитесь, что URI заключён в одиночные (') либо двойные (\") кавычки, если "
+"он\n"
+" содержит \"&\" или любое другой символ считающийся специальным в "
+"интерпретаторе команд."
+
+#: src/version_usage.cc:146
+msgid "Refer to man page for more information."
+msgstr "Обратитесь к странице man для более подробной информации"
+
+#: src/message.h:57
+#, c-format
+msgid "GID#%s - Download has already completed: %s"
+msgstr "GID#%s - Загрузка уже завершена: %s"
+
+#: src/message.h:102
+#, c-format
+msgid "Unrecognized URI or unsupported protocol: %s"
+msgstr "Нераспознанный URI или неподдерживаемый протокол: %s"
+
+#: src/message.h:103
+#, c-format
+msgid "Tracker returned warning message: %s"
+msgstr "Трекер вернул предупреждение: %s"
+
+#: src/message.h:104
+#, c-format
+msgid "The segment file %s exists."
+msgstr "Сегмент файла %s существует."
+
+#: src/message.h:105
+#, c-format
+msgid "The segment file %s does not exist."
+msgstr "Сегмент файла %s не существует."
+
+#: src/message.h:106
+#, c-format
+msgid "Saving the segment file %s"
+msgstr "Сохранение сегмента файла %s"
+
+#: src/message.h:107
+msgid "The segment file was saved successfully."
+msgstr "Сегмент файла успешно сохранен."
+
+#: src/message.h:108
+#, c-format
+msgid "Loading the segment file %s."
+msgstr "Загрузка сегмента файл %sа"
+
+#: src/message.h:109
+msgid "The segment file was loaded successfully."
+msgstr "Сегмент файла успешно загружен."
+
+#: src/message.h:110
+msgid "No URI to download. Download aborted."
+msgstr "URI для загрузки не найден. Загрузка прервана."
+
+#: src/message.h:111
+#, c-format
+msgid ""
+"File %s exists, but a control file(*.aria2) does not exist. Download was "
+"canceled in order to prevent your file from being truncated to 0. If you are "
+"sure to download the file all over again, then delete it or add --allow-"
+"overwrite=true option and restart aria2."
+msgstr ""
+"Файл %s существует, но управляющий файл (*.aria2) отсутствует. Загрузка "
+"отменена чтобы не обнулить существующий файл.  Если вы хотите перезаписать "
+"файл, то удалите его или добавьте опцию --allow-overwrite=true и "
+"перезапустите aria2."
+
+#: src/message.h:112
+#, c-format
+msgid "Allocating file %s, %s bytes"
+msgstr "Для файла %s резервируем %s байт"
+
+#: src/message.h:113
+msgid "File not found"
+msgstr "Файл не найден"
+
+#: src/message.h:114
+msgid "Not a directory"
+msgstr "Это не каталог."
+
+#: src/message.h:115
+#, c-format
+msgid "Insufficient checksums. checksumLength=%d, numChecksum=%d"
+msgstr "Несовпадение контрольных сумм. checksumLength=%d, numChecksum=%d"
+
+#: src/message.h:116
+#, c-format
+msgid "Writing file %s"
+msgstr "Пишется файл %s"
+
+#: src/message.h:117
+msgid "No peer list received."
+msgstr "Список узлов отсутствует."
+
+#: src/message.h:118
+#, c-format
+msgid "Adding peer %s:%d"
+msgstr "Добавляется узел %s:%d"
+
+#: src/message.h:119
+#, c-format
+msgid "Deleting used piece index=%d, fillRate(%%)=%d<=%d"
+msgstr "Удаляется используемая часть index=%d, fillRate(%%)=%d<=%d"
+
+#: src/message.h:120
+msgid "Download of selected files was complete."
+msgstr "Закачка выбранных фалов завершена."
+
+#: src/message.h:121
+msgid "The download was complete."
+msgstr "Закачка завершена."
+
+#: src/message.h:122
+#, c-format
+msgid "Removed %d have entries."
+msgstr "Удаленный %d имеет вхождения"
+
+#: src/message.h:123
+#, c-format
+msgid "Validating file %s"
+msgstr "Проверяется файл %s"
+
+#: src/message.h:124
+#, c-format
+msgid "%d seconds to allocate %s byte(s)"
+msgstr "%d секунд для размещения %s байт"
+
+#: src/message.h:127
+#, c-format
+msgid "Metalink: Queueing %s for download."
+msgstr "Metalink: Постановка в очередь %s."
+
+#: src/message.h:128
+#, c-format
+msgid "Download complete: %s"
+msgstr "Закачка завершена: %s"
+
+#: src/message.h:129
+msgid "Seeding is over."
+msgstr "Рздача закончена."
+
+#: src/message.h:130
+msgid "No chunk to verify."
+msgstr "Нет частей для проверки."
+
+#: src/message.h:131
+#, c-format
+msgid "Good chunk checksum. hash=%s"
+msgstr "Верная контрольная сумма. hash=%s"
+
+#: src/message.h:132
+#, c-format
+msgid "Failed to load cookies from %s"
+msgstr "Ошибка загрузки куков с %s"
+
+#: src/message.h:133
+#, c-format
+msgid ""
+".netrc file %s does not have correct permissions. It should be 600. netrc "
+"support disabled."
+msgstr ""
+"Файл .netrc  %s не имеет правильных полномочий. Он должен быть 600. "
+"Поддержка netrc отключена."
+
+#: src/message.h:134
+msgid "Logging started."
+msgstr "Логирование начато."
+
+#: src/message.h:135
+msgid "Specify at least one URL."
+msgstr "Укажите как минимум один URL."
+
+#: src/message.h:136
+msgid "daemon failed."
+msgstr "служба остановлена."
+
+#: src/message.h:137
+#, c-format
+msgid "Verification finished successfully. file=%s"
+msgstr "Проверка закончена успешно. file=%s"
+
+#: src/message.h:138
+#, c-format
+msgid "Checksum error detected. file=%s"
+msgstr "Ошибка в контрольноый сумме . file=%s"
+
+#: src/message.h:139
+#, c-format
+msgid "Incomplete range specified. %s"
+msgstr "Указан неполный диапазон. %s"
+
+#: src/message.h:140
+#, c-format
+msgid "Failed to convert string into value: %s"
+msgstr "Ошибка при конвертировании строки в переменную: %s"
+
+#: src/message.h:141
+msgid "Resource not found"
+msgstr "Ресурс не найден"
+
+#: src/message.h:142
+#, c-format
+msgid "File already exists. Renamed to %s."
+msgstr "Файл уже существует. Переименован в %s"
+
+#: src/message.h:143
+msgid "Cannot parse metalink XML file. XML may be malformed."
+msgstr "Невозможно разобрать XML файл металинка. XML файл может быть испорчен."
+
+#: src/message.h:144
+#, c-format
+msgid "Too small payload size for %s, size=%d."
+msgstr "Слишком маленький полезный размер для %s, размер=%d."
+
+#: src/message.h:145
+#, c-format
+msgid ""
+"Removed the defunct control file %s because the download file %s doesn't "
+"exist."
+msgstr "Бесполезный контрольный файл %s удалён потому что %s не существует."
+
+#: src/message.h:146
+#, c-format
+msgid "Your share ratio was %.1f, uploaded/downloaded=%sB/%sB"
+msgstr "Ваш рейтинг раздачи %.1f, роздано/загружено=%sB/%sB"
+
+#: src/message.h:147
+#, c-format
+msgid "Missing %s in torrent metainfo."
+msgstr "Пропущен %s в metainfo торренте"
+
+#: src/message.h:148
+msgid "Tracker returned null data."
+msgstr "Трэкер вернул нулевые данные"
+
+#: src/message.h:149
+msgid "Windows socket library initialization failed"
+msgstr "Ошибка инициализации Windows socket библиотеки"
+
+#: src/message.h:150
+#, c-format
+msgid "%d second(s) has passed. Stopping application."
+msgstr "прошло %d секунд(ы). Выполнение программы завершается."
+
+#: src/message.h:151
+#, c-format
+msgid ""
+"Saved signature as %s. Please note that aria2 doesn't verify signatures."
+msgstr ""
+"Сигнатура сохранена как %s. Пожалуйста заметьте, что aria2 не проверяет "
+"сигнатури."
+
+#: src/message.h:153
+#, c-format
+msgid "Saving signature as %s failed. Maybe file already exists."
+msgstr "Сохраниение подписи как %s не удалось. Может быть файл уже существует."
+
+#: src/message.h:156
+#, c-format
+msgid "Failed to open ServerStat file %s for read."
+msgstr "Не удалось открить файл ServerStat %s для чтения."
+
+#: src/message.h:157
+#, c-format
+msgid "ServerStat file %s loaded successfully."
+msgstr "Файл ServerStat %s успешно загружен."
+
+#: src/message.h:158
+#, c-format
+msgid "Failed to read ServerStat from %s."
+msgstr "Не удалось прочитать ServerStat из %s."
+
+#: src/message.h:161
+#, c-format
+msgid "Failed to open ServerStat file %s for write."
+msgstr "Не удалось открыть файл ServerStat %s для записи."
+
+#: src/message.h:162
+#, c-format
+msgid "ServerStat file %s saved successfully."
+msgstr "Файл ServerStat %s был успешно сохранен."
+
+#: src/message.h:163
+#, c-format
+msgid "Failed to write ServerStat to %s."
+msgstr "Не удалось записать ServerStat в %s."
+
+#: src/message.h:166
+#, c-format
+msgid "Failed to establish connection, cause: %s"
+msgstr "Не удалось установить соединение, причина: %s"
+
+#: src/message.h:167
+#, c-format
+msgid "Network problem has occurred. cause:%s"
+msgstr "Ошибка сети, причина: %s"
+
+#: src/message.h:169
+#, c-format
+msgid "Failed to load trusted CA certificates from %s. Cause: %s"
+msgstr "Ошибка во время загрузки CA сертификата %s. Причина: %s"
+
+#: src/message.h:171
+#, c-format
+msgid "Certificate verification failed. Cause: %s"
+msgstr "Проверка сертификата не состоялась. Причина: %s"
+
+#: src/message.h:172
+msgid "No certificate found."
+msgstr "Не найдено сертификат"
+
+#: src/message.h:173
+msgid "Hostname not match."
+msgstr "Не соответствующее имя хоста."
+
+#: src/message.h:174
+msgid "No files to download."
+msgstr "Нет файлов для загрузки."
+
+#: src/message.h:176
+msgid ""
+"You may encounter the certificate verification error with HTTPS server. See "
+"--ca-certificate and --check-certificate option."
+msgstr ""
+"Вы можете столкнуться с ошибкой проверки сертификата с HTTPS сервера. "
+"Смотрите параметры --ca-certificate и --check-certificate."
+
+#: src/message.h:178
+#, c-format
+msgid "Printing the contents of file '%s'..."
+msgstr "Печать содержимого файла '%s'..."
+
+#: src/message.h:179
+msgid "This file is neither Torrent nor Metalink file. Skipping."
+msgstr "Этот файл не является файлом торента или Metalink. Пропущено."
+
+#: src/message.h:184
+#, c-format
+msgid "Is '%s' a file?"
+msgstr "'%s' является файлом?"
+
+#: src/message.h:185
+#, c-format
+msgid "Failed to find given interface %s, cause: %s"
+msgstr "Поиск  интерфейса %s не удался по следующей причине: %s"
+
+#: src/message.h:187
+#, c-format
+msgid "Saved metadata as %s."
+msgstr "Метаданные сохранены как %s."
+
+#: src/message.h:188
+#, c-format
+msgid "Saving metadata as %s failed. Maybe file already exists."
+msgstr ""
+"Сохранение метаданных как %s не удалось. Вероятно, файл уже существует."
+
+#: src/message.h:190
+#, c-format
+msgid "Detected directory traversal directive in %s"
+msgstr ""
+
+#: src/message.h:194
+msgid "Timeout."
+msgstr "Время ожидания вышло."
+
+#: src/message.h:195
+msgid "Invalid chunk size."
+msgstr "Неверный размер блока"
+
+#: src/message.h:196
+#, c-format
+msgid "Too large chunk. size=%d"
+msgstr "Блок слишком большой. Размер=%d"
+
+#: src/message.h:197
+msgid "Invalid header."
+msgstr "Неверный заголовок."
+
+#: src/message.h:198
+msgid "Invalid response."
+msgstr "Неверный ответ."
+
+#: src/message.h:199
+msgid "No header found."
+msgstr "Заголовок не найден"
+
+#: src/message.h:200
+msgid "No status header."
+msgstr "Нет заголовка status"
+
+#: src/message.h:201
+msgid "Proxy connection failed."
+msgstr "Ошибка подключения к proxy-серверу"
+
+#: src/message.h:202
+msgid "Connection failed."
+msgstr "Не удалось установить соединение."
+
+#: src/message.h:203
+#, c-format
+msgid ""
+"The requested filename and the previously registered one are not same. "
+"Expected:%s Actual:%s"
+msgstr ""
+"Запрошенное имя файла и зарегистрированное до этого не совпадают. Ожидалось:"
+"%s, фактическое:%s"
+
+#: src/message.h:204
+#, c-format
+msgid "The response status is not successful. status=%d"
+msgstr "Ошибочный статус ответа. Статус=%d"
+
+#: src/message.h:205
+#, c-format
+msgid "Too large file size. size=%s"
+msgstr "Слишком большой размер файла. Размер=%s"
+
+#: src/message.h:206
+#, c-format
+msgid "Transfer encoding %s is not supported."
+msgstr "Кодировка передачи %s не поддерживается."
+
+#: src/message.h:207
+#, c-format
+msgid "SSL initialization failed: %s"
+msgstr "Ошибка инициализации SSL: %s"
+
+#: src/message.h:208
+msgid "SSL I/O error"
+msgstr "Ошибка ввода/вывода SSL"
+
+#: src/message.h:209
+msgid "SSL protocol error"
+msgstr "Ошибка SSL протокола"
+
+#: src/message.h:210
+#, c-format
+msgid "SSL unknown error %d"
+msgstr "Неизвестная SSL ошибка %d"
+
+#: src/message.h:211
+#, c-format
+msgid "SSL initialization failed: OpenSSL connect error %d"
+msgstr "инициализация SSL не удалась: ошибка номер %d соединения OpenSSL"
+
+#: src/message.h:212
+#, c-format
+msgid "Size mismatch Expected:%s Actual:%s"
+msgstr "Размер не совпадает. Ожидаемый:%s, фактический:%s"
+
+#: src/message.h:213
+msgid "Authorization failed."
+msgstr "Ошибка авторизации."
+
+#: src/message.h:214
+msgid "Got EOF from the server."
+msgstr "От сервера получен EOF."
+
+#: src/message.h:215
+msgid "Got EOF from peer."
+msgstr "От узла получен EOF"
+
+#: src/message.h:216
+msgid "Malformed meta info."
+msgstr "Неверные метаданные."
+
+#: src/message.h:218
+#, c-format
+msgid "Failed to open the file %s, cause: %s"
+msgstr "Ошибка открытия файл %s: %s"
+
+#: src/message.h:219
+#, c-format
+msgid "Failed to write into the file %s, cause: %s"
+msgstr "Ошибка записи в файл %s: %s"
+
+#: src/message.h:220
+#, c-format
+msgid "Failed to read from the file %s, cause: %s"
+msgstr "Ошибка чтения файла %s: %s"
+
+#: src/message.h:221
+msgid "Failed to read data from disk."
+msgstr "Ошибка чтения диска."
+
+#: src/message.h:222
+#, c-format
+msgid "Failed to calculate SHA1 digest of or a part of the file %s, cause: %s"
+msgstr "Ошибка подсчета дайджеста SHA1 файла %s, причина: %s"
+
+#: src/message.h:223
+#, c-format
+msgid "Failed to seek the file %s, cause: %s"
+msgstr "Ошибка позиционирования файла %s: %s"
+
+#: src/message.h:224
+#, c-format
+msgid "The offset is out of range, offset=%s"
+msgstr "Смещение вне диапозона. Смещение=%s"
+
+#: src/message.h:225
+#, c-format
+msgid "%s is not a directory."
+msgstr "%s не является каталогом."
+
+#: src/message.h:226
+#, c-format
+msgid "Failed to make the directory %s, cause: %s"
+msgstr "Ошибка создания каталога %s: %s"
+
+#: src/message.h:227
+#, c-format
+msgid "Failed to open the segment file %s, cause: %s"
+msgstr "Ошибка открытия сегмента файла %s: %s"
+
+#: src/message.h:228
+#, c-format
+msgid "Failed to write into the segment file %s, cause: %s"
+msgstr "Ошибка записи сегмента файла %s: %s"
+
+#: src/message.h:229
+#, c-format
+msgid "Failed to read from the segment file %s, cause: %s"
+msgstr "Ошибка чтения сегмента файла %s: %s"
+
+#: src/message.h:231
+#, c-format
+msgid "Failed to open a socket, cause: %s"
+msgstr "Ошибка открытия сокета: %s"
+
+#: src/message.h:232
+#, c-format
+msgid "Failed to set a socket option, cause: %s"
+msgstr "Ошибка установки настроек для сокета: %s"
+
+#: src/message.h:233
+#, c-format
+msgid "Failed to set a socket as blocking, cause: %s"
+msgstr "Ошибка в установлении блокируещего сокета: %s"
+
+#: src/message.h:234
+#, c-format
+msgid "Failed to set a socket as non-blocking, cause: %s"
+msgstr "Ошибка в установлении неблокируещего сокета: %s"
+
+#: src/message.h:235
+#, c-format
+msgid "Failed to bind a socket, cause: %s"
+msgstr "Ошибка инициализации сокета: %s"
+
+#: src/message.h:236
+#, c-format
+msgid "Failed to listen to a socket, cause: %s"
+msgstr "Ошибка прослушивания сокета: %s"
+
+#: src/message.h:237
+#, c-format
+msgid "Failed to accept a peer connection, cause: %s"
+msgstr "Ошибка принятия подлючения от узла: %s"
+
+#: src/message.h:238
+#, c-format
+msgid "Failed to get the name of socket, cause: %s"
+msgstr "Ошибка получения имени сокета: %s"
+
+#: src/message.h:239
+#, c-format
+msgid "Failed to get the name of connected peer, cause: %s"
+msgstr "Ошибка получения имени подключенного узла: %s"
+
+#: src/message.h:240
+#, c-format
+msgid "Failed to resolve the hostname %s, cause: %s"
+msgstr "Ошибка преобразования имени узла %s, причина: %s"
+
+#: src/message.h:241
+#, c-format
+msgid "Failed to connect to the host %s, cause: %s"
+msgstr "Ошибка подключения к хосту %s: %s"
+
+#: src/message.h:242
+#, c-format
+msgid "Failed to check whether the socket is writable, cause: %s"
+msgstr "Ошибка проверки сокета на запись: %s"
+
+#: src/message.h:243
+#, c-format
+msgid "Failed to check whether the socket is readable, cause: %s"
+msgstr "Ошибка проверки сокета на чтение: %s"
+
+#: src/message.h:244
+#, c-format
+msgid "Failed to send data, cause: %s"
+msgstr "Ошибка отправки данных: %s"
+
+#: src/message.h:245
+#, c-format
+msgid "Failed to receive data, cause: %s"
+msgstr "Ошибка получения данных: %s"
+
+#: src/message.h:246
+#, c-format
+msgid "Failed to peek data, cause: %s"
+msgstr "Ошибка запроса данных: %s"
+
+#: src/message.h:247
+#, c-format
+msgid "Unknown socket error %d (0x%x)"
+msgstr "Неизвестная ошибка сокета %d (0x%x)"
+
+#: src/message.h:248
+#, c-format
+msgid "File %s exists, but %s does not exist."
+msgstr "Файл %s существует, а %s - нет."
+
+#: src/message.h:249
+#, c-format
+msgid "Invalid payload size for %s, size=%d. It should be %d."
+msgstr "Не действительный размер загрузки для %s,  розмер=%d. Должен быть %d."
+
+#: src/message.h:250
+#, c-format
+msgid "Invalid ID=%d for %s. It should be %d."
+msgstr "Неправильный ID=%d для %s. Должен быть %d."
+
+#: src/message.h:251
+#, c-format
+msgid ""
+"Chunk checksum validation failed. checksumIndex=%d, offset=%s, expectedHash="
+"%s, actualHash=%s"
+msgstr ""
+"Контрольная сумма блока не прошла подтверждения. checksumIndex=%d, offset="
+"%s, expectedHash=%s, actualHash=%s"
+
+#: src/message.h:252
+msgid "Download aborted."
+msgstr "Загрузка отменена."
+
+#: src/message.h:253
+#, c-format
+msgid "File %s is being downloaded by other command."
+msgstr "Файл %s загружается другой программой."
+
+#: src/message.h:254
+msgid "Insufficient checksums."
+msgstr "Нехватает контрольных сумм."
+
+#: src/message.h:255
+#, c-format
+msgid "Tracker returned failure reason: %s"
+msgstr "Трекер вернул информацию про сбой, причина: %s"
+
+#: src/message.h:256
+msgid "Flooding detected."
+msgstr "Обнаружен флудинг."
+
+#: src/message.h:257
+#, c-format
+msgid ""
+"Drop connection because no request/piece messages were exchanged in a "
+"certain period(%d seconds)."
+msgstr ""
+"Потеряно соединение из-за отсутствия запросов/частей сообщений, которыми "
+"обменивались бы за определённый период (%d секунд)."
+
+#: src/message.h:258
+msgid "The infoHash in torrent file doesn't match to one in .aria2 file."
+msgstr ""
+"infoHash в файле торента не идентичный тому, который находится в файле ."
+"aria2."
+
+#: src/message.h:259
+#, c-format
+msgid "No such file entry %s"
+msgstr "Нет такого файла %s"
+
+#: src/message.h:260
+#, c-format
+msgid "Too slow Downloading speed: %d <= %d(B/s), host:%s"
+msgstr "Слишком медленная скорость скачивания: %d <= %d(B/s), хост:%s"
+
+#: src/message.h:261
+msgid "No HttpRequestEntry found."
+msgstr "Не найдено HttpRequestEntry"
+
+#: src/message.h:262
+#, c-format
+msgid "Got %d status, but no location header provided."
+msgstr "Получен статус %d, но не обеспечено местонахождение заголовка."
+
+#: src/message.h:263
+#, c-format
+msgid "Invalid range header. Request: %s-%s/%s, Response: %s-%s/%s"
+msgstr "Неправильный диапазон в заголовке. Запрос: %s-%s/%s, Ответ: %s-%s/%s"
+
+#: src/message.h:264
+msgid "No file matched with your preference."
+msgstr "Нет файла соответствующего Вашим настройкам."
+
+#: src/message.h:265
+msgid "Exception caught"
+msgstr "Обнаружено исключение"
+
+#: src/message.h:266
+#, c-format
+msgid "Max payload length exceeded or invalid. length = %u"
+msgstr ""
+"Максимальная длина полезной загрузки превышена или неправильная. длина = %u"
+
+#: src/message.h:267
+#, c-format
+msgid "Invalid file length. Cannot continue download %s: local %s, remote %s"
+msgstr ""
+"Неправильная длина файла. Невозможно продолжить загрузку %s: локальный %s, "
+"отдалённый %s"
+
+#: src/BtSetup.cc:176
+msgid "Errors occurred while binding port.\n"
+msgstr "Ошибка при открытии порта.\n"
+
+#~ msgid "CUID#%d - The download for one segment completed successfully."
+#~ msgstr "CUID#%d - Скачивание одного из сегментов успешно завершено."
+
+#~ msgid "CUID#%d - No segment available."
+#~ msgstr "CUID#%d - Нет доступного сегмента."
+
+#~ msgid "CUID#%d - Redirecting to %s"
+#~ msgstr "CUID#%d - Перенаправление на %s"
+
+#~ msgid ""
+#~ "CUID#%d - Requesting:\n"
+#~ "%s"
+#~ msgstr ""
+#~ "CUID#%d - Запрос:\n"
+#~ "%s"
+
+#~ msgid ""
+#~ "CUID#%d - Response received:\n"
+#~ "%s"
+#~ msgstr ""
+#~ "CUID#%d - Получен ответ:\n"
+#~ "%s"
+
+#~ msgid "CUID#%d - Download aborted."
+#~ msgstr "CUID#%d - Скачивание отменено."
+
+#~ msgid "CUID#%d - %d times attempted, but no success. Download aborted."
+#~ msgstr "CUID#%d - Совершено %d безуспешных попыток. Скачивание отменено."
+
+#~ msgid "Files:"
+#~ msgstr "Файлы:"
+
+#~ msgid " -o, --out=FILE               The file name of the downloaded file."
+#~ msgstr " -o, --out=FILE               Имя файла для скачанного файла."
+
+#~ msgid " -D, --daemon                 Run as daemon."
+#~ msgstr " -D, --daemon                 Запустить в качестве демона."
+
+#~ msgid ""
+#~ " -M, --metalink-file=METALINK_FILE The file path to the .metalink file."
+#~ msgstr " -M, --metalink-file=METALINK_FILE Путь к .metalink-файлу."
